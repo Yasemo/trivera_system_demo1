@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1706173800003",
+        "studentId": "ST001",
+        "studentName": "John Smith",
+        "actionType": "Enrollment",
+        "details": "Enrolled in Advanced React Development course",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T12:30:00.000Z"
+    },
+    {
+        "id": "1706171100003",
+        "studentId": "ST002",
+        "studentName": "Maria Garcia",
+        "actionType": "Certification",
+        "details": "Completed Cloud Architecture certification track",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T11:45:00.000Z"
+    },
+    {
+        "id": "1706167500003",
+        "studentId": "ST003",
+        "studentName": "Robert Chen",
+        "actionType": "Payment",
+        "details": "Processed payment for Python Data Science course",
+        "module": "Billing",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:45:00.000Z"
+    },
+    {
+        "id": "1706164800003",
+        "studentId": "ST001",
+        "studentName": "John Smith",
+        "actionType": "Progress",
+        "details": "Completed Module 3 of Java Fundamentals",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:00:00.000Z"
+    },
+    {
+        "id": "1706161200003",
+        "studentId": "ST004",
+        "studentName": "Sarah Wilson",
+        "actionType": "Access",
+        "details": "First login to learning platform",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T09:00:00.000Z"
+    },
+    {
+        "id": "1706158500003",
+        "studentId": "ST002",
+        "studentName": "Maria Garcia",
+        "actionType": "Feedback",
+        "details": "Submitted course evaluation for Docker workshop",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T08:15:00.000Z"
+    },
+    {
+        "id": "1706155800003",
+        "studentId": "ST005",
+        "studentName": "James Thompson",
+        "actionType": "Request",
+        "details": "Requested enrollment in upcoming ML bootcamp",
+        "module": "Course Sessions",
+        "status": "Pending",
+        "timestamp": "2024-01-25T07:30:00.000Z"
+    },
+    {
+        "id": "1706153100003",
+        "studentId": "ST003",
+        "studentName": "Robert Chen",
+        "actionType": "Download",
+        "details": "Downloaded course completion certificate",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:45:00.000Z"
+    },
+    {
+        "id": "1706150400003",
+        "studentId": "ST001",
+        "studentName": "John Smith",
+        "actionType": "Schedule",
+        "details": "Rescheduled upcoming AWS workshop session",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:00:00.000Z"
+    },
+    {
+        "id": "1706147700003",
+        "studentId": "ST004",
+        "studentName": "Sarah Wilson",
+        "actionType": "Path",
+        "details": "Started Full Stack Developer learning path",
+        "module": "Courses",
+        "status": "Active",
+        "timestamp": "2024-01-25T05:15:00.000Z"
+    }
+]

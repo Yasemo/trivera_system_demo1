@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1706173800001",
+        "clientId": "CL001",
+        "clientName": "TechCorp",
+        "actionType": "Request",
+        "details": "Requested private Java Fundamentals session for Q2",
+        "module": "Course Sessions",
+        "status": "Pending",
+        "timestamp": "2024-01-25T12:30:00.000Z"
+    },
+    {
+        "id": "1706171100001",
+        "clientId": "CL002",
+        "clientName": "GlobalTech Solutions",
+        "actionType": "Enrollment",
+        "details": "Enrolled 5 employees in Cloud Architecture certification track",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T11:45:00.000Z"
+    },
+    {
+        "id": "1706167500001",
+        "clientId": "CL003",
+        "clientName": "DataDrive Inc",
+        "actionType": "Payment",
+        "details": "Processed payment for Q1 training package",
+        "module": "Billing",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:45:00.000Z"
+    },
+    {
+        "id": "1706164800001",
+        "clientId": "CL001",
+        "clientName": "TechCorp",
+        "actionType": "Modification",
+        "details": "Requested date change for upcoming Python workshop",
+        "module": "Course Sessions",
+        "status": "Rejected",
+        "timestamp": "2024-01-25T10:00:00.000Z"
+    },
+    {
+        "id": "1706161200001",
+        "clientId": "CL004",
+        "clientName": "InnovateSoft",
+        "actionType": "Access",
+        "details": "Activated portal access for new training coordinator",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T09:00:00.000Z"
+    },
+    {
+        "id": "1706158500001",
+        "clientId": "CL002",
+        "clientName": "GlobalTech Solutions",
+        "actionType": "Feedback",
+        "details": "Submitted feedback for completed Docker workshop",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T08:15:00.000Z"
+    },
+    {
+        "id": "1706155800001",
+        "clientId": "CL005",
+        "clientName": "SecureNet Systems",
+        "actionType": "Request",
+        "details": "Requested custom curriculum for cybersecurity team",
+        "module": "Courses",
+        "status": "Pending",
+        "timestamp": "2024-01-25T07:30:00.000Z"
+    },
+    {
+        "id": "1706153100001",
+        "clientId": "CL003",
+        "clientName": "DataDrive Inc",
+        "actionType": "Cancellation",
+        "details": "Cancelled upcoming ML workshop due to scheduling conflict",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:45:00.000Z"
+    },
+    {
+        "id": "1706150400001",
+        "clientId": "CL001",
+        "clientName": "TechCorp",
+        "actionType": "Document",
+        "details": "Downloaded Q1 training certificates for team",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:00:00.000Z"
+    },
+    {
+        "id": "1706147700001",
+        "clientId": "CL004",
+        "clientName": "InnovateSoft",
+        "actionType": "Enrollment",
+        "details": "Bulk enrollment in Spring Boot Advanced course",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T05:15:00.000Z"
+    }
+]

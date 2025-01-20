@@ -1,0 +1,539 @@
+{
+    "instructors": [
+        {
+            "id": "INS001",
+            "firstName": "Johnnn",
+            "lastName": "Smith",
+            "email": "john.smith@trivera.com",
+            "phone": "+1-555-123-4567",
+            "status": "Active",
+            "expertise": [
+                "Java",
+                "Spring Framework",
+                "JavaScript"
+            ],
+            "certifications": [
+                {
+                    "name": "Oracle Certified Professional Java SE 11 Developer",
+                    "issueDate": "2022-01-15",
+                    "expiryDate": "2025-01-15",
+                    "certificationId": "OCPJSE11-123456"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/New_York",
+                "maxSessionsPerMonth": 6,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.8,
+                "totalSessionsTaught": 124,
+                "studentSatisfactionScore": 96,
+                "lastReviewDate": "2023-12-15"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual",
+                "On-site"
+            ],
+            "languages": [
+                "English",
+                "Spanish"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS001-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS001/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS002",
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "email": "jane.doe@trivera.com",
+            "phone": "+1-555-987-6543",
+            "status": "Active",
+            "expertise": [
+                "React",
+                "Node.js",
+                "TypeScript",
+                "Full Stack Development"
+            ],
+            "certifications": [
+                {
+                    "name": "AWS Certified Developer - Associate",
+                    "issueDate": "2023-06-01",
+                    "expiryDate": "2026-06-01",
+                    "certificationId": "AWS-DEV-789012"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Los_Angeles",
+                "maxSessionsPerMonth": 4,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.9,
+                "totalSessionsTaught": 87,
+                "studentSatisfactionScore": 98,
+                "lastReviewDate": "2023-11-30"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "languages": [
+                "English"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS002-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS002/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS003",
+            "firstName": "Michael",
+            "lastName": "Johnson",
+            "email": "michael.johnson@trivera.com",
+            "phone": "+1-555-234-5678",
+            "status": "Active",
+            "expertise": [
+                "Spring Framework",
+                "Microservices",
+                "Cloud Architecture",
+                "DevOps"
+            ],
+            "certifications": [
+                {
+                    "name": "Spring Professional Certification",
+                    "issueDate": "2023-03-15",
+                    "expiryDate": "2025-03-15",
+                    "certificationId": "SPRING-123456"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Chicago",
+                "maxSessionsPerMonth": 6,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.7,
+                "totalSessionsTaught": 156,
+                "studentSatisfactionScore": 94,
+                "lastReviewDate": "2023-12-20"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual",
+                "On-site"
+            ],
+            "languages": [
+                "English",
+                "German"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS003-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS003/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS004",
+            "firstName": "Sarah",
+            "lastName": "Chen",
+            "email": "sarah.chen@trivera.com",
+            "phone": "+1-555-345-6789",
+            "status": "Active",
+            "expertise": [
+                "Python",
+                "Machine Learning",
+                "Data Science",
+                "TensorFlow"
+            ],
+            "certifications": [
+                {
+                    "name": "TensorFlow Developer Certificate",
+                    "issueDate": "2023-08-01",
+                    "expiryDate": "2025-08-01",
+                    "certificationId": "TF-DEV-456789"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/New_York",
+                "maxSessionsPerMonth": 5,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.8,
+                "totalSessionsTaught": 92,
+                "studentSatisfactionScore": 96,
+                "lastReviewDate": "2023-12-10"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "languages": [
+                "English",
+                "Mandarin"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS004-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS004/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS005",
+            "firstName": "Robert",
+            "lastName": "Martinez",
+            "email": "robert.martinez@trivera.com",
+            "phone": "+1-555-456-7890",
+            "status": "Active",
+            "expertise": [
+                "Angular",
+                "TypeScript",
+                "RxJS",
+                "UI/UX Design"
+            ],
+            "certifications": [
+                {
+                    "name": "Google UX Design Certificate",
+                    "issueDate": "2023-05-15",
+                    "expiryDate": "2025-05-15",
+                    "certificationId": "GUX-789012"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Los_Angeles",
+                "maxSessionsPerMonth": 6,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.9,
+                "totalSessionsTaught": 78,
+                "studentSatisfactionScore": 97,
+                "lastReviewDate": "2023-11-25"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual",
+                "On-site"
+            ],
+            "languages": [
+                "English",
+                "Spanish"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS005-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS005/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS006",
+            "firstName": "Emily",
+            "lastName": "Wilson",
+            "email": "emily.wilson@trivera.com",
+            "phone": "+1-555-567-8901",
+            "status": "Active",
+            "expertise": [
+                "Test Automation",
+                "Selenium",
+                "JUnit",
+                "CI/CD"
+            ],
+            "certifications": [
+                {
+                    "name": "ISTQB Advanced Level Test Automation Engineer",
+                    "issueDate": "2023-07-01",
+                    "expiryDate": "2026-07-01",
+                    "certificationId": "ISTQB-345678"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Denver",
+                "maxSessionsPerMonth": 5,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.7,
+                "totalSessionsTaught": 64,
+                "studentSatisfactionScore": 93,
+                "lastReviewDate": "2023-12-05"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "languages": [
+                "English"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS006-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS006/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS007",
+            "firstName": "David",
+            "lastName": "Kim",
+            "email": "david.kim@trivera.com",
+            "phone": "+1-555-678-9012",
+            "status": "Active",
+            "expertise": [
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "DevOps"
+            ],
+            "certifications": [
+                {
+                    "name": "Certified Kubernetes Administrator",
+                    "issueDate": "2023-09-01",
+                    "expiryDate": "2026-09-01",
+                    "certificationId": "CKA-901234"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Los_Angeles",
+                "maxSessionsPerMonth": 6,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.8,
+                "totalSessionsTaught": 112,
+                "studentSatisfactionScore": 95,
+                "lastReviewDate": "2023-12-15"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual",
+                "On-site"
+            ],
+            "languages": [
+                "English",
+                "Korean"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS007-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS007/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS008",
+            "firstName": "Lisa",
+            "lastName": "Brown",
+            "email": "lisa.brown@trivera.com",
+            "phone": "+1-555-789-0123",
+            "status": "Active",
+            "expertise": [
+                "Vue.js",
+                "JavaScript",
+                "Web Performance",
+                "Progressive Web Apps"
+            ],
+            "certifications": [
+                {
+                    "name": "Google Mobile Web Specialist",
+                    "issueDate": "2023-04-15",
+                    "expiryDate": "2025-04-15",
+                    "certificationId": "GWD-567890"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Chicago",
+                "maxSessionsPerMonth": 5,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.9,
+                "totalSessionsTaught": 83,
+                "studentSatisfactionScore": 98,
+                "lastReviewDate": "2023-11-20"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "languages": [
+                "English"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS008-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS008/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS009",
+            "firstName": "Thomas",
+            "lastName": "Anderson",
+            "email": "thomas.anderson@trivera.com",
+            "phone": "+1-555-890-1234",
+            "status": "Active",
+            "expertise": [
+                "C#",
+                ".NET Core",
+                "Azure",
+                "Microservices"
+            ],
+            "certifications": [
+                {
+                    "name": "Microsoft Certified: Azure Developer Associate",
+                    "issueDate": "2023-10-01",
+                    "expiryDate": "2024-10-01",
+                    "certificationId": "MCADA-123789"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/New_York",
+                "maxSessionsPerMonth": 6,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.7,
+                "totalSessionsTaught": 95,
+                "studentSatisfactionScore": 94,
+                "lastReviewDate": "2023-12-01"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual",
+                "On-site"
+            ],
+            "languages": [
+                "English"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS009-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS009/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS010",
+            "firstName": "Maria",
+            "lastName": "Garcia",
+            "email": "maria.garcia@trivera.com",
+            "phone": "+1-555-901-2345",
+            "status": "Active",
+            "expertise": [
+                "Data Engineering",
+                "Big Data",
+                "Apache Spark",
+                "Python"
+            ],
+            "certifications": [
+                {
+                    "name": "Databricks Certified Associate Developer",
+                    "issueDate": "2023-11-15",
+                    "expiryDate": "2024-11-15",
+                    "certificationId": "DCAD-456123"
+                }
+            ],
+            "availability": {
+                "preferredTimeZone": "America/Los_Angeles",
+                "maxSessionsPerMonth": 5,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 4.8,
+                "totalSessionsTaught": 72,
+                "studentSatisfactionScore": 96,
+                "lastReviewDate": "2023-12-10"
+            },
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "languages": [
+                "English",
+                "Spanish"
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-INS010-001",
+                    "type": "Contract",
+                    "title": "Instructor Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/instructors/INS010/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "INS011",
+            "firstName": "Yoyo",
+            "lastName": "Ma",
+            "email": "john@gmail.com",
+            "phone": "55555555",
+            "status": "Active",
+            "expertise": [
+                "Java",
+                "Python"
+            ],
+            "preferredDeliveryMethods": [
+                "On-site"
+            ],
+            "availability": {
+                "preferredTimeZone": "New_York",
+                "maxSessionsPerMonth": 5,
+                "blackoutDates": []
+            },
+            "performanceMetrics": {
+                "averageRating": 0,
+                "totalSessionsTaught": 0,
+                "studentSatisfactionScore": 0,
+                "lastReviewDate": "2025-01-17T06:10:44.507Z"
+            }
+        },
+        {
+            "id": "INS012",
+            "firstName": "lion",
+            "lastName": "king",
+            "email": "john@gmail.com",
+            "phone": "55555555",
+            "status": "Active",
+            "expertise": [
+                "exel\n                        ×",
+                "java\n                        ×"
+            ],
+            "preferredDeliveryMethods": [
+                "Virtual"
+            ],
+            "availability": {
+                "preferredTimeZone": "America/New_York",
+                "maxSessionsPerMonth": 3
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1706173800002",
+        "partnerId": "PT001",
+        "partnerName": "TechTraining Plus",
+        "actionType": "Referral",
+        "details": "Referred 3 students for upcoming Python certification",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T12:30:00.000Z"
+    },
+    {
+        "id": "1706171100002",
+        "partnerId": "PT002",
+        "partnerName": "EduConnect Solutions",
+        "actionType": "Commission",
+        "details": "Commission payment processed for Q4 2023 referrals",
+        "module": "Billing",
+        "status": "Complete",
+        "timestamp": "2024-01-25T11:45:00.000Z"
+    },
+    {
+        "id": "1706167500002",
+        "partnerId": "PT003",
+        "partnerName": "LearnIT Partners",
+        "actionType": "Territory",
+        "details": "Requested expansion into Southeast Asia region",
+        "module": "System",
+        "status": "Pending",
+        "timestamp": "2024-01-25T10:45:00.000Z"
+    },
+    {
+        "id": "1706164800002",
+        "partnerId": "PT001",
+        "partnerName": "TechTraining Plus",
+        "actionType": "Marketing",
+        "details": "Downloaded new course materials for Spring campaign",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:00:00.000Z"
+    },
+    {
+        "id": "1706161200002",
+        "partnerId": "PT004",
+        "partnerName": "SkillBridge Academy",
+        "actionType": "Access",
+        "details": "Updated portal credentials for new team member",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T09:00:00.000Z"
+    },
+    {
+        "id": "1706158500002",
+        "partnerId": "PT002",
+        "partnerName": "EduConnect Solutions",
+        "actionType": "Promotion",
+        "details": "Activated special discount code for Q1 enrollments",
+        "module": "System",
+        "status": "Active",
+        "timestamp": "2024-01-25T08:15:00.000Z"
+    },
+    {
+        "id": "1706155800002",
+        "partnerId": "PT005",
+        "partnerName": "Global Learning Hub",
+        "actionType": "Report",
+        "details": "Generated monthly performance analytics",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T07:30:00.000Z"
+    },
+    {
+        "id": "1706153100002",
+        "partnerId": "PT003",
+        "partnerName": "LearnIT Partners",
+        "actionType": "Feedback",
+        "details": "Submitted feedback on new partner portal features",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:45:00.000Z"
+    },
+    {
+        "id": "1706150400002",
+        "partnerId": "PT001",
+        "partnerName": "TechTraining Plus",
+        "actionType": "Bulk",
+        "details": "Registered 10 students for AWS certification track",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:00:00.000Z"
+    },
+    {
+        "id": "1706147700002",
+        "partnerId": "PT004",
+        "partnerName": "SkillBridge Academy",
+        "actionType": "Request",
+        "details": "Requested custom training package for enterprise client",
+        "module": "Courses",
+        "status": "Pending",
+        "timestamp": "2024-01-25T05:15:00.000Z"
+    }
+]

@@ -1,0 +1,735 @@
+{
+    "students": [
+        {
+            "studentId": "ST2023001",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "john.doe@email.com",
+            "phone": "+1-555-123-4567",
+            "status": "Active",
+            "clientPartner": null,
+            "contactInfo": {
+                "address": {
+                    "street": "123 Main St",
+                    "city": "Boston",
+                    "state": "MA",
+                    "zipCode": "02108",
+                    "country": "USA"
+                },
+                "alternateEmail": "johnd.personal@email.com",
+                "emergencyContact": {
+                    "name": "Jane Doe",
+                    "relationship": "Spouse",
+                    "phone": "+1-555-987-6543"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT2000",
+                    "courseTitle": "Getting Started with Programming, OO & Java Basics for Non-Developers",
+                    "sessionId": "CS1001",
+                    "startDate": "2023-09-01",
+                    "endDate": "2023-09-05",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT1001",
+                    "certificateUrl": "/certificates/CERT1001.pdf"
+                },
+                {
+                    "courseCode": "TT2100",
+                    "courseTitle": "Core Java Programming Developer's Workshop",
+                    "sessionId": "CS1002",
+                    "startDate": "2023-10-15",
+                    "endDate": "2023-10-19",
+                    "status": "In Progress",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "456 Corporate Ave",
+                    "city": "Boston",
+                    "state": "MA",
+                    "zipCode": "02109",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX1001",
+                        "date": "2023-08-15",
+                        "type": "Payment",
+                        "amount": 2695,
+                        "status": "Completed",
+                        "courseCode": "TT2000",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV1001.pdf"
+                    },
+                    {
+                        "transactionId": "TRX1002",
+                        "date": "2023-10-01",
+                        "type": "Payment",
+                        "amount": 2895,
+                        "status": "Completed",
+                        "courseCode": "TT2100",
+                        "paymentMethod": "Bank Transfer",
+                        "invoiceUrl": "/invoices/INV1002.pdf"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "documentId": "DOC1001",
+                    "type": "Certificate",
+                    "title": "Java Basics Completion Certificate",
+                    "courseCode": "TT2000",
+                    "uploadDate": "2023-09-05",
+                    "url": "/certificates/CERT1001.pdf"
+                },
+                {
+                    "documentId": "DOC1002",
+                    "type": "Course Materials",
+                    "title": "Java Basics Course Materials",
+                    "courseCode": "TT2000",
+                    "uploadDate": "2023-09-01",
+                    "url": "/materials/TT2000_materials.zip"
+                }
+            ]
+        },
+        {
+            "studentId": "ST2023002",
+            "firstName": "Sarah",
+            "lastName": "Johnson",
+            "email": "sarah.j@techcorp.com",
+            "phone": "+1-555-222-3333",
+            "status": "Active",
+            "clientPartner": "CLIENT001",
+            "contactInfo": {
+                "address": {
+                    "street": "456 Innovation Way",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "zipCode": "98101",
+                    "country": "USA"
+                },
+                "alternateEmail": "sarahj.personal@email.com",
+                "emergencyContact": {
+                    "name": "Mike Johnson",
+                    "relationship": "Spouse",
+                    "phone": "+1-555-333-4444"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT2100",
+                    "courseTitle": "Core Java Programming Developer's Workshop",
+                    "sessionId": "CS2002",
+                    "startDate": "2023-09-10",
+                    "endDate": "2023-09-14",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT2002",
+                    "certificateUrl": "/certificates/CERT2002.pdf"
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "789 Corporate Drive",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "zipCode": "98102",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2002",
+                        "date": "2023-09-01",
+                        "type": "Payment",
+                        "amount": 2895,
+                        "status": "Completed",
+                        "courseCode": "TT2100",
+                        "paymentMethod": "Corporate Account",
+                        "invoiceUrl": "/invoices/INV2002.pdf"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "documentId": "DOC2003",
+                    "type": "Certificate",
+                    "title": "Java Programming Workshop Certificate",
+                    "courseCode": "TT2100",
+                    "uploadDate": "2023-09-14",
+                    "url": "/certificates/CERT2002.pdf"
+                }
+            ]
+        },
+        {
+            "studentId": "ST2023003",
+            "firstName": "Michael",
+            "lastName": "Chen",
+            "email": "michael.chen@email.com",
+            "phone": "+1-555-444-5555",
+            "status": "Graduated",
+            "clientPartner": null,
+            "contactInfo": {
+                "address": {
+                    "street": "321 Tech Street",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipCode": "78701",
+                    "country": "USA"
+                },
+                "alternateEmail": "mchen.work@email.com",
+                "emergencyContact": {
+                    "name": "Lisa Chen",
+                    "relationship": "Sister",
+                    "phone": "+1-555-666-7777"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT4030",
+                    "courseTitle": "React.js Essentials",
+                    "sessionId": "CS2003",
+                    "startDate": "2023-07-01",
+                    "endDate": "2023-07-04",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT2003",
+                    "certificateUrl": "/certificates/CERT2003.pdf"
+                },
+                {
+                    "courseCode": "TT4040",
+                    "courseTitle": "Node.js Application Development",
+                    "sessionId": "CS2004",
+                    "startDate": "2023-08-01",
+                    "endDate": "2023-08-04",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT2004",
+                    "certificateUrl": "/certificates/CERT2004.pdf"
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "321 Tech Street",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipCode": "78701",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2003",
+                        "date": "2023-06-15",
+                        "type": "Payment",
+                        "amount": 2595,
+                        "status": "Completed",
+                        "courseCode": "TT4030",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2003.pdf"
+                    },
+                    {
+                        "transactionId": "TRX2004",
+                        "date": "2023-07-15",
+                        "type": "Payment",
+                        "amount": 2595,
+                        "status": "Completed",
+                        "courseCode": "TT4040",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2004.pdf"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "documentId": "DOC2004",
+                    "type": "Certificate",
+                    "title": "Full Stack JavaScript Developer Certificate",
+                    "courseCode": "TT4040",
+                    "uploadDate": "2023-08-04",
+                    "url": "/certificates/CERT2004.pdf"
+                }
+            ]
+        },
+        {
+            "studentId": "ST2023004",
+            "firstName": "Emily",
+            "lastName": "Wilson",
+            "email": "emily.wilson@innovatech.com",
+            "phone": "+1-555-888-9999",
+            "status": "Active",
+            "clientPartner": "CLIENT002",
+            "contactInfo": {
+                "address": {
+                    "street": "567 Innovation Blvd",
+                    "city": "Boston",
+                    "state": "MA",
+                    "zipCode": "02110",
+                    "country": "USA"
+                },
+                "alternateEmail": "ewilson.personal@email.com",
+                "emergencyContact": {
+                    "name": "David Wilson",
+                    "relationship": "Father",
+                    "phone": "+1-555-111-2222"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT3320",
+                    "courseTitle": "Core Spring Quick Start",
+                    "sessionId": "CS2005",
+                    "startDate": "2023-10-01",
+                    "endDate": "2023-10-05",
+                    "status": "In Progress",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "789 Enterprise Way",
+                    "city": "Boston",
+                    "state": "MA",
+                    "zipCode": "02111",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2005",
+                        "date": "2023-09-15",
+                        "type": "Payment",
+                        "amount": 2895,
+                        "status": "Completed",
+                        "courseCode": "TT3320",
+                        "paymentMethod": "Corporate Account",
+                        "invoiceUrl": "/invoices/INV2005.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023005",
+            "firstName": "James",
+            "lastName": "Martinez",
+            "email": "james.m@email.com",
+            "phone": "+1-555-777-8888",
+            "status": "Inactive",
+            "clientPartner": null,
+            "contactInfo": {
+                "address": {
+                    "street": "890 Oak Lane",
+                    "city": "Chicago",
+                    "state": "IL",
+                    "zipCode": "60601",
+                    "country": "USA"
+                },
+                "alternateEmail": "jmartinez.work@email.com",
+                "emergencyContact": {
+                    "name": "Ana Martinez",
+                    "relationship": "Mother",
+                    "phone": "+1-555-999-0000"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT2000",
+                    "courseTitle": "Getting Started with Programming",
+                    "sessionId": "CS2006",
+                    "startDate": "2023-06-01",
+                    "endDate": "2023-06-05",
+                    "status": "Incomplete",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "890 Oak Lane",
+                    "city": "Chicago",
+                    "state": "IL",
+                    "zipCode": "60601",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2006",
+                        "date": "2023-05-15",
+                        "type": "Payment",
+                        "amount": 2695,
+                        "status": "Refunded",
+                        "courseCode": "TT2000",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2006.pdf"
+                    },
+                    {
+                        "transactionId": "TRX2007",
+                        "date": "2023-06-10",
+                        "type": "Refund",
+                        "amount": -2695,
+                        "status": "Completed",
+                        "courseCode": "TT2000",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2007.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023006",
+            "firstName": "Rachel",
+            "lastName": "Thompson",
+            "email": "rachel.t@devco.com",
+            "phone": "+1-555-333-2222",
+            "status": "Active",
+            "clientPartner": "CLIENT006",
+            "contactInfo": {
+                "address": {
+                    "street": "123 Developer Ave",
+                    "city": "Portland",
+                    "state": "OR",
+                    "zipCode": "97201",
+                    "country": "USA"
+                },
+                "alternateEmail": "rthompson.personal@email.com",
+                "emergencyContact": {
+                    "name": "Mark Thompson",
+                    "relationship": "Brother",
+                    "phone": "+1-555-444-3333"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT4060",
+                    "courseTitle": "TypeScript Programming",
+                    "sessionId": "CS2007",
+                    "startDate": "2023-10-15",
+                    "endDate": "2023-10-17",
+                    "status": "Registered",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "456 Business Center",
+                    "city": "Portland",
+                    "state": "OR",
+                    "zipCode": "97202",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2008",
+                        "date": "2023-10-01",
+                        "type": "Payment",
+                        "amount": 2195,
+                        "status": "Completed",
+                        "courseCode": "TT4060",
+                        "paymentMethod": "Corporate Account",
+                        "invoiceUrl": "/invoices/INV2008.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023007",
+            "firstName": "Daniel",
+            "lastName": "Kim",
+            "email": "daniel.kim@email.com",
+            "phone": "+1-555-666-5555",
+            "status": "Graduated",
+            "clientPartner": null,
+            "contactInfo": {
+                "address": {
+                    "street": "789 Pine Street",
+                    "city": "San Diego",
+                    "state": "CA",
+                    "zipCode": "92101",
+                    "country": "USA"
+                },
+                "alternateEmail": "dkim.work@email.com",
+                "emergencyContact": {
+                    "name": "Jennifer Kim",
+                    "relationship": "Spouse",
+                    "phone": "+1-555-777-6666"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT4001",
+                    "courseTitle": "Introduction to HTML5/CSS3",
+                    "sessionId": "CS2008",
+                    "startDate": "2023-05-01",
+                    "endDate": "2023-05-04",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT2008",
+                    "certificateUrl": "/certificates/CERT2008.pdf"
+                },
+                {
+                    "courseCode": "TT4010",
+                    "courseTitle": "JavaScript Programming Fundamentals",
+                    "sessionId": "CS2009",
+                    "startDate": "2023-06-01",
+                    "endDate": "2023-06-04",
+                    "status": "Completed",
+                    "grade": "Pass",
+                    "certificateId": "CERT2009",
+                    "certificateUrl": "/certificates/CERT2009.pdf"
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "789 Pine Street",
+                    "city": "San Diego",
+                    "state": "CA",
+                    "zipCode": "92101",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2009",
+                        "date": "2023-04-15",
+                        "type": "Payment",
+                        "amount": 4990,
+                        "status": "Completed",
+                        "courseCode": "BUNDLE-WEB",
+                        "paymentMethod": "Bank Transfer",
+                        "invoiceUrl": "/invoices/INV2009.pdf"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "documentId": "DOC2009",
+                    "type": "Certificate",
+                    "title": "Web Development Foundation Certificate",
+                    "courseCode": "BUNDLE-WEB",
+                    "uploadDate": "2023-06-04",
+                    "url": "/certificates/CERT2010.pdf"
+                }
+            ]
+        },
+        {
+            "studentId": "ST2023008",
+            "firstName": "Olivia",
+            "lastName": "Brown",
+            "email": "olivia.b@cloudtech.com",
+            "phone": "+1-555-888-7777",
+            "status": "Active",
+            "clientPartner": "CLIENT008",
+            "contactInfo": {
+                "address": {
+                    "street": "234 Cloud Drive",
+                    "city": "Denver",
+                    "state": "CO",
+                    "zipCode": "80202",
+                    "country": "USA"
+                },
+                "alternateEmail": "obrown.personal@email.com",
+                "emergencyContact": {
+                    "name": "William Brown",
+                    "relationship": "Father",
+                    "phone": "+1-555-999-8888"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT3335",
+                    "courseTitle": "Mastering Spring 5.x Developer Boot Camp",
+                    "sessionId": "CS2010",
+                    "startDate": "2023-10-01",
+                    "endDate": "2023-10-05",
+                    "status": "In Progress",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "567 Enterprise Blvd",
+                    "city": "Denver",
+                    "state": "CO",
+                    "zipCode": "80203",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2010",
+                        "date": "2023-09-15",
+                        "type": "Payment",
+                        "amount": 2995,
+                        "status": "Completed",
+                        "courseCode": "TT3335",
+                        "paymentMethod": "Corporate Account",
+                        "invoiceUrl": "/invoices/INV2010.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023009",
+            "firstName": "William",
+            "lastName": "Taylor",
+            "email": "william.t@email.com",
+            "phone": "+1-555-222-1111",
+            "status": "Inactive",
+            "clientPartner": null,
+            "contactInfo": {
+                "address": {
+                    "street": "456 Maple Road",
+                    "city": "Miami",
+                    "state": "FL",
+                    "zipCode": "33101",
+                    "country": "USA"
+                },
+                "alternateEmail": "wtaylor.work@email.com",
+                "emergencyContact": {
+                    "name": "Emma Taylor",
+                    "relationship": "Sister",
+                    "phone": "+1-555-333-1111"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT2100",
+                    "courseTitle": "Core Java Programming Developer's Workshop",
+                    "sessionId": "CS2011",
+                    "startDate": "2023-07-01",
+                    "endDate": "2023-07-05",
+                    "status": "Withdrawn",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "456 Maple Road",
+                    "city": "Miami",
+                    "state": "FL",
+                    "zipCode": "33101",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2011",
+                        "date": "2023-06-15",
+                        "type": "Payment",
+                        "amount": 2895,
+                        "status": "Refunded",
+                        "courseCode": "TT2100",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2011.pdf"
+                    },
+                    {
+                        "transactionId": "TRX2012",
+                        "date": "2023-07-02",
+                        "type": "Refund",
+                        "amount": -2316,
+                        "status": "Completed",
+                        "courseCode": "TT2100",
+                        "paymentMethod": "Credit Card",
+                        "invoiceUrl": "/invoices/INV2012.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023010",
+            "firstName": "Sophia",
+            "lastName": "Garcia",
+            "email": "sophia.g@datatech.com",
+            "phone": "+1-555-444-9999",
+            "status": "Active",
+            "clientPartner": "CLIENT010",
+            "contactInfo": {
+                "address": {
+                    "street": "789 Data Way",
+                    "city": "Atlanta",
+                    "state": "GA",
+                    "zipCode": "30301",
+                    "country": "USA"
+                },
+                "alternateEmail": "sgarcia.personal@email.com",
+                "emergencyContact": {
+                    "name": "Carlos Garcia",
+                    "relationship": "Father",
+                    "phone": "+1-555-555-9999"
+                }
+            },
+            "courseHistory": [
+                {
+                    "courseCode": "TT3353",
+                    "courseTitle": "Introduction to Reactive Spring",
+                    "sessionId": "CS2012",
+                    "startDate": "2023-11-01",
+                    "endDate": "2023-11-03",
+                    "status": "Registered",
+                    "grade": null,
+                    "certificateId": null,
+                    "certificateUrl": null
+                }
+            ],
+            "payments": {
+                "billingAddress": {
+                    "street": "321 Corporate Square",
+                    "city": "Atlanta",
+                    "state": "GA",
+                    "zipCode": "30302",
+                    "country": "USA"
+                },
+                "transactions": [
+                    {
+                        "transactionId": "TRX2013",
+                        "date": "2023-10-15",
+                        "type": "Payment",
+                        "amount": 2195,
+                        "status": "Completed",
+                        "courseCode": "TT3353",
+                        "paymentMethod": "Corporate Account",
+                        "invoiceUrl": "/invoices/INV2013.pdf"
+                    }
+                ]
+            },
+            "documents": []
+        },
+        {
+            "studentId": "ST2023011",
+            "firstName": "lion",
+            "lastName": "king",
+            "email": "lion@gmail.com",
+            "phone": "55555555",
+            "status": "Active",
+            "clientPartner": "bruh",
+            "contactInfo": {
+                "address": {
+                    "street": "896 Eglinton Ave East",
+                    "city": "East York",
+                    "state": "ON",
+                    "zipCode": "m1x2b2",
+                    "country": "Canada"
+                },
+                "alternateEmail": null,
+                "emergencyContact": {
+                    "name": "yo",
+                    "relationship": "yo",
+                    "phone": "5555555"
+                }
+            }
+        }
+    ]
+}

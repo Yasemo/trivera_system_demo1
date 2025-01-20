@@ -1,0 +1,507 @@
+{
+    "subscribers": [
+        {
+            "id": "SUB001",
+            "firstName": "Alex",
+            "lastName": "Thompson",
+            "email": "alex.thompson@email.com",
+            "phone": "+1-555-111-3333",
+            "status": "Active",
+            "subscriptionDate": "2024-01-05T14:30:00Z",
+            "source": "Website Form",
+            "preferences": {
+                "courseInterests": [
+                    "Java Programming",
+                    "Spring Framework"
+                ],
+                "preferredFormat": [
+                    "Virtual",
+                    "On-site"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Software Developer",
+                "company": "Tech Solutions Inc",
+                "industry": "Technology",
+                "experienceLevel": "Intermediate"
+            },
+            "leadStatus": {
+                "currentState": "Qualified",
+                "lastContactDate": "2024-01-15T10:00:00Z",
+                "assignedTo": "Sarah Miller",
+                "notes": "Interested in Java certification path"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-05T14:30:00Z",
+                    "type": "Subscription",
+                    "details": "Initial website subscription"
+                },
+                {
+                    "date": "2024-01-15T10:00:00Z",
+                    "type": "Email",
+                    "details": "Responded to Java course inquiry"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": false,
+                "consentDate": "2024-01-05T14:30:00Z",
+                "lastUpdated": "2024-01-05T14:30:00Z"
+            }
+        },
+        {
+            "id": "SUB002",
+            "firstName": "Maria",
+            "lastName": "Garcia",
+            "email": "maria.garcia@company.com",
+            "phone": "+1-555-222-4444",
+            "status": "Active",
+            "subscriptionDate": "2024-01-10T09:15:00Z",
+            "source": "LinkedIn Campaign",
+            "preferences": {
+                "courseInterests": [
+                    "React.js",
+                    "Node.js",
+                    "Full Stack Development"
+                ],
+                "preferredFormat": [
+                    "Virtual"
+                ],
+                "communicationFrequency": "Monthly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Frontend Developer",
+                "company": "Digital Innovations LLC",
+                "industry": "E-commerce",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "New",
+                "lastContactDate": "2024-01-10T09:15:00Z",
+                "assignedTo": "John Davis",
+                "notes": "Potential corporate training opportunity"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-10T09:15:00Z",
+                    "type": "Subscription",
+                    "details": "Subscribed through LinkedIn campaign"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-10T09:15:00Z",
+                "lastUpdated": "2024-01-10T09:15:00Z"
+            }
+        },
+        {
+            "id": "SUB003",
+            "firstName": "James",
+            "lastName": "Wilson",
+            "email": "james.wilson@enterprise.com",
+            "phone": "+1-555-333-5555",
+            "status": "Converted",
+            "subscriptionDate": "2023-12-01T11:45:00Z",
+            "source": "Referral",
+            "preferences": {
+                "courseInterests": [
+                    "Spring Boot",
+                    "Microservices"
+                ],
+                "preferredFormat": [
+                    "On-site"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Technical Lead",
+                "company": "Enterprise Systems Corp",
+                "industry": "Finance",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "Converted",
+                "lastContactDate": "2024-01-20T15:30:00Z",
+                "assignedTo": "Emily Brown",
+                "notes": "Converted to client - Enrolled team in Spring Boot course"
+            },
+            "interactions": [
+                {
+                    "date": "2023-12-01T11:45:00Z",
+                    "type": "Subscription",
+                    "details": "Initial subscription through partner referral"
+                },
+                {
+                    "date": "2024-01-20T15:30:00Z",
+                    "type": "Conversion",
+                    "details": "Enrolled team of 5 in Spring Boot course"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2023-12-01T11:45:00Z",
+                "lastUpdated": "2023-12-01T11:45:00Z"
+            }
+        },
+        {
+            "id": "SUB004",
+            "firstName": "Michael",
+            "lastName": "Brown",
+            "email": "michael.brown@techfirm.com",
+            "phone": "+1-555-444-6666",
+            "status": "Active",
+            "subscriptionDate": "2024-01-20T10:00:00Z",
+            "source": "Trade Show",
+            "preferences": {
+                "courseInterests": [
+                    "Cloud Computing",
+                    "DevOps",
+                    "Containerization"
+                ],
+                "preferredFormat": [
+                    "Virtual",
+                    "On-site"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "DevOps Engineer",
+                "company": "TechFirm Solutions",
+                "industry": "Cloud Services",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "Qualified",
+                "lastContactDate": "2024-01-25T14:30:00Z",
+                "assignedTo": "Robert Wilson",
+                "notes": "Interested in DevOps certification programs"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-20T10:00:00Z",
+                    "type": "Subscription",
+                    "details": "Met at Cloud Tech Expo"
+                },
+                {
+                    "date": "2024-01-25T14:30:00Z",
+                    "type": "Phone Call",
+                    "details": "Discussed DevOps training options"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-20T10:00:00Z",
+                "lastUpdated": "2024-01-20T10:00:00Z"
+            }
+        },
+        {
+            "id": "SUB005",
+            "firstName": "Emily",
+            "lastName": "Davis",
+            "email": "emily.davis@startup.io",
+            "phone": "+1-555-777-8888",
+            "status": "Active",
+            "subscriptionDate": "2024-01-15T16:45:00Z",
+            "source": "Social Media",
+            "preferences": {
+                "courseInterests": [
+                    "Full Stack Development",
+                    "React.js",
+                    "Node.js"
+                ],
+                "preferredFormat": [
+                    "Virtual"
+                ],
+                "communicationFrequency": "Bi-weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Frontend Developer",
+                "company": "StartupIO",
+                "industry": "Technology",
+                "experienceLevel": "Intermediate"
+            },
+            "leadStatus": {
+                "currentState": "New",
+                "lastContactDate": "2024-01-15T16:45:00Z",
+                "assignedTo": "Lisa Chen",
+                "notes": "Looking to transition to full stack role"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-15T16:45:00Z",
+                    "type": "Subscription",
+                    "details": "Responded to LinkedIn post"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": false,
+                "consentDate": "2024-01-15T16:45:00Z",
+                "lastUpdated": "2024-01-15T16:45:00Z"
+            }
+        },
+        {
+            "id": "SUB006",
+            "firstName": "Daniel",
+            "lastName": "Martinez",
+            "email": "daniel.martinez@edutech.com",
+            "phone": "+1-555-999-0000",
+            "status": "Active",
+            "subscriptionDate": "2024-01-18T13:20:00Z",
+            "source": "Email Campaign",
+            "preferences": {
+                "courseInterests": [
+                    "Java Development",
+                    "Spring Framework",
+                    "Microservices"
+                ],
+                "preferredFormat": [
+                    "Virtual",
+                    "On-site"
+                ],
+                "communicationFrequency": "Monthly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Java Developer",
+                "company": "EduTech Systems",
+                "industry": "Education Technology",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "Qualified",
+                "lastContactDate": "2024-01-22T11:00:00Z",
+                "assignedTo": "Mark Thompson",
+                "notes": "Interested in team training for Java modernization"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-18T13:20:00Z",
+                    "type": "Subscription",
+                    "details": "Responded to Java 21 campaign"
+                },
+                {
+                    "date": "2024-01-22T11:00:00Z",
+                    "type": "Email",
+                    "details": "Requested team training information"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-18T13:20:00Z",
+                "lastUpdated": "2024-01-18T13:20:00Z"
+            }
+        },
+        {
+            "id": "SUB007",
+            "firstName": "Sarah",
+            "lastName": "Kim",
+            "email": "sarah.kim@healthtech.com",
+            "phone": "+1-555-111-2222",
+            "status": "Active",
+            "subscriptionDate": "2024-01-25T09:15:00Z",
+            "source": "Website Form",
+            "preferences": {
+                "courseInterests": [
+                    "Security Testing",
+                    "Test Automation",
+                    "Quality Assurance"
+                ],
+                "preferredFormat": [
+                    "Virtual"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "QA Engineer",
+                "company": "HealthTech Solutions",
+                "industry": "Healthcare",
+                "experienceLevel": "Intermediate"
+            },
+            "leadStatus": {
+                "currentState": "New",
+                "lastContactDate": "2024-01-25T09:15:00Z",
+                "assignedTo": "David Lee",
+                "notes": "Interested in test automation certification"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-25T09:15:00Z",
+                    "type": "Subscription",
+                    "details": "Requested testing course information"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-25T09:15:00Z",
+                "lastUpdated": "2024-01-25T09:15:00Z"
+            }
+        },
+        {
+            "id": "SUB008",
+            "firstName": "Robert",
+            "lastName": "Taylor",
+            "email": "robert.taylor@fintech.com",
+            "phone": "+1-555-333-4444",
+            "status": "Active",
+            "subscriptionDate": "2024-01-22T14:30:00Z",
+            "source": "Partner Referral",
+            "preferences": {
+                "courseInterests": [
+                    "Cloud Security",
+                    "DevSecOps",
+                    "Compliance"
+                ],
+                "preferredFormat": [
+                    "On-site"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Security Engineer",
+                "company": "FinTech Global",
+                "industry": "Financial Services",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "Qualified",
+                "lastContactDate": "2024-01-24T10:00:00Z",
+                "assignedTo": "Jennifer White",
+                "notes": "Looking for security certification programs"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-22T14:30:00Z",
+                    "type": "Subscription",
+                    "details": "Referred by security partner"
+                },
+                {
+                    "date": "2024-01-24T10:00:00Z",
+                    "type": "Phone Call",
+                    "details": "Discussed security training options"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-22T14:30:00Z",
+                "lastUpdated": "2024-01-22T14:30:00Z"
+            }
+        },
+        {
+            "id": "SUB009",
+            "firstName": "Amanda",
+            "lastName": "Rodriguez",
+            "email": "amanda.rodriguez@retailtech.com",
+            "phone": "+1-555-555-6666",
+            "status": "Active",
+            "subscriptionDate": "2024-01-28T11:45:00Z",
+            "source": "Webinar",
+            "preferences": {
+                "courseInterests": [
+                    "Mobile Development",
+                    "React Native",
+                    "Cross-platform Development"
+                ],
+                "preferredFormat": [
+                    "Virtual",
+                    "Blended"
+                ],
+                "communicationFrequency": "Bi-weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Mobile Developer",
+                "company": "RetailTech Solutions",
+                "industry": "Retail",
+                "experienceLevel": "Intermediate"
+            },
+            "leadStatus": {
+                "currentState": "New",
+                "lastContactDate": "2024-01-28T11:45:00Z",
+                "assignedTo": "Michael Brown",
+                "notes": "Interested in mobile development certification"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-28T11:45:00Z",
+                    "type": "Subscription",
+                    "details": "Attended mobile development webinar"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": false,
+                "consentDate": "2024-01-28T11:45:00Z",
+                "lastUpdated": "2024-01-28T11:45:00Z"
+            }
+        },
+        {
+            "id": "SUB010",
+            "firstName": "William",
+            "lastName": "Chen",
+            "email": "william.chen@datatech.com",
+            "phone": "+1-555-777-9999",
+            "status": "Active",
+            "subscriptionDate": "2024-01-30T15:00:00Z",
+            "source": "Conference",
+            "preferences": {
+                "courseInterests": [
+                    "Data Engineering",
+                    "Big Data",
+                    "Cloud Analytics"
+                ],
+                "preferredFormat": [
+                    "Virtual",
+                    "On-site"
+                ],
+                "communicationFrequency": "Weekly",
+                "newsletterOptIn": true
+            },
+            "professionalInfo": {
+                "currentRole": "Data Engineer",
+                "company": "DataTech Analytics",
+                "industry": "Data Analytics",
+                "experienceLevel": "Advanced"
+            },
+            "leadStatus": {
+                "currentState": "Qualified",
+                "lastContactDate": "2024-01-31T10:30:00Z",
+                "assignedTo": "Sarah Miller",
+                "notes": "Interested in data engineering certification"
+            },
+            "interactions": [
+                {
+                    "date": "2024-01-30T15:00:00Z",
+                    "type": "Subscription",
+                    "details": "Met at Data Analytics Conference"
+                },
+                {
+                    "date": "2024-01-31T10:30:00Z",
+                    "type": "Email",
+                    "details": "Sent course catalog and pricing"
+                }
+            ],
+            "marketingConsent": {
+                "email": true,
+                "phone": true,
+                "consentDate": "2024-01-30T15:00:00Z",
+                "lastUpdated": "2024-01-30T15:00:00Z"
+            }
+        }
+    ]
+}

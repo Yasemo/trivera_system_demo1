@@ -1,0 +1,377 @@
+{
+    "Course": {
+        "courseCode": "string",
+        "courseTitle": "string",
+        "courseSubtitle": "string",
+        "status": "string (enum: 'Approved', 'Draft')",
+        "skillLevel": "string (enum: 'Basic', 'Intermediate', 'Advanced')",
+        "duration": "string",
+        "publicSeatPrice": "number",
+        "availableFormats": "string[]",
+        "catalogSummary": "string"
+    },
+    "Student": {
+        "studentId": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "status": "string (enum: 'Active', 'Inactive', 'Graduated')",
+        "clientPartner": "string | null",
+        "contactInfo": {
+            "address": {
+                "street": "string",
+                "city": "string",
+                "state": "string",
+                "zipCode": "string",
+                "country": "string"
+            },
+            "alternateEmail": "string",
+            "emergencyContact": {
+                "name": "string",
+                "relationship": "string",
+                "phone": "string"
+            }
+        },
+        "courseHistory": [
+            {
+                "courseCode": "string",
+                "courseTitle": "string",
+                "sessionId": "string",
+                "startDate": "string (date)",
+                "endDate": "string (date)",
+                "status": "string (enum: 'Completed', 'In Progress', 'Registered', 'Incomplete', 'Withdrawn')",
+                "grade": "string | null",
+                "certificateId": "string | null",
+                "certificateUrl": "string | null"
+            }
+        ],
+        "payments": {
+            "billingAddress": {
+                "street": "string",
+                "city": "string",
+                "state": "string",
+                "zipCode": "string",
+                "country": "string"
+            },
+            "transactions": [
+                {
+                    "transactionId": "string",
+                    "date": "string (date)",
+                    "type": "string (enum: 'Payment', 'Refund')",
+                    "amount": "number",
+                    "status": "string (enum: 'Completed', 'Refunded')",
+                    "courseCode": "string",
+                    "paymentMethod": "string",
+                    "invoiceUrl": "string"
+                }
+            ]
+        },
+        "documents": [
+            {
+                "documentId": "string",
+                "type": "string",
+                "title": "string",
+                "courseCode": "string",
+                "uploadDate": "string (date)",
+                "url": "string"
+            }
+        ]
+    },
+    "CourseSession": {
+        "id": "string",
+        "courseId": "string",
+        "type": "string (enum: 'public', 'private')",
+        "startDate": "string (datetime)",
+        "endDate": "string (datetime)",
+        "status": "string (enum: 'approved', 'in-review', 'draft', 'cancelled')",
+        "creationSource": "string (enum: 'staff', 'client-portal')",
+        "enrollmentCount": "number",
+        "maxEnrollment": "number",
+        "instructor": "string",
+        "location": "string (enum: 'Virtual', 'On-site')",
+        "clientId": "string (optional)",
+        "customOutlineDoc": "string (optional)",
+        "cancelReason": "string (optional)",
+        "cancelledAt": "string (datetime, optional)"
+    },
+    "Instructor": {
+        "id": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "status": "string (enum: 'Active', 'Inactive')",
+        "expertise": "string[]",
+        "certifications": [
+            {
+                "name": "string",
+                "issueDate": "string (date)",
+                "expiryDate": "string (date)",
+                "certificationId": "string"
+            }
+        ],
+        "availability": {
+            "preferredTimeZone": "string",
+            "maxSessionsPerMonth": "number",
+            "blackoutDates": [
+                {
+                    "startDate": "string (date)",
+                    "endDate": "string (date)",
+                    "reason": "string"
+                }
+            ]
+        },
+        "performanceMetrics": {
+            "averageRating": "number",
+            "totalSessionsTaught": "number",
+            "studentSatisfactionScore": "number",
+            "lastReviewDate": "string (date)"
+        },
+        "preferredDeliveryMethods": "string[]",
+        "languages": "string[]",
+        "documents": [
+            {
+                "documentId": "string",
+                "type": "string",
+                "title": "string",
+                "uploadDate": "string (date)",
+                "url": "string"
+            }
+        ]
+    },
+    "Client": {
+        "id": "string",
+        "companyName": "string",
+        "status": "string (enum: 'Active', 'Inactive')",
+        "industry": "string",
+        "primaryContact": {
+            "firstName": "string",
+            "lastName": "string",
+            "title": "string",
+            "email": "string",
+            "phone": "string"
+        },
+        "billingContact": {
+            "firstName": "string",
+            "lastName": "string",
+            "title": "string",
+            "email": "string",
+            "phone": "string"
+        },
+        "address": {
+            "street": "string",
+            "city": "string",
+            "state": "string",
+            "zipCode": "string",
+            "country": "string"
+        },
+        "pricingArrangement": {
+            "discountPercentage": "number",
+            "effectiveDate": "string (date)",
+            "expiryDate": "string (date)",
+            "minimumStudentsPerSession": "number",
+            "customPricing": [
+                {
+                    "courseCode": "string",
+                    "pricePerStudent": "number"
+                }
+            ]
+        },
+        "paymentPreferences": {
+            "preferredMethod": "string",
+            "terms": "string",
+            "currency": "string",
+            "taxExempt": "boolean",
+            "taxExemptionId": "string?"
+        },
+        "sessionHistory": [
+            {
+                "sessionId": "string",
+                "courseCode": "string",
+                "startDate": "string (datetime)",
+                "endDate": "string (datetime)",
+                "studentCount": "number",
+                "status": "string",
+                "totalAmount": "number",
+                "customizations": "string?"
+            }
+        ],
+        "documents": [
+            {
+                "documentId": "string",
+                "type": "string",
+                "title": "string",
+                "uploadDate": "string (date)",
+                "url": "string"
+            }
+        ],
+        "notes": [
+            {
+                "date": "string (datetime)",
+                "author": "string",
+                "content": "string"
+            }
+        ]
+    },
+    "Partner": {
+        "id": "string",
+        "companyName": "string",
+        "status": "string (enum: 'Active', 'Inactive')",
+        "partnerType": "string (enum: 'Reseller', 'Referral')",
+        "primaryContact": {
+            "firstName": "string",
+            "lastName": "string",
+            "title": "string",
+            "email": "string",
+            "phone": "string"
+        },
+        "billingContact": {
+            "firstName": "string",
+            "lastName": "string",
+            "title": "string",
+            "email": "string",
+            "phone": "string"
+        },
+        "address": {
+            "street": "string",
+            "city": "string",
+            "state": "string",
+            "zipCode": "string",
+            "country": "string"
+        },
+        "territory": {
+            "regions": "string[]",
+            "states": "string[]",
+            "exclusivity": "boolean",
+            "effectiveDate": "string (date)",
+            "expiryDate": "string (date)"
+        },
+        "commissionStructure": {
+            "baseRate": "number",
+            "volumeIncentives": [
+                {
+                    "threshold": "number",
+                    "rate": "number"
+                }
+            ],
+            "specialPromotions": [
+                {
+                    "courseCode": "string",
+                    "rate": "number",
+                    "startDate": "string (date)",
+                    "endDate": "string (date)"
+                }
+            ]
+        },
+        "performance": {
+            "ytdRevenue": "number",
+            "ytdCommissions": "number",
+            "totalStudentsReferred": "number",
+            "activeEnrollments": "number"
+        },
+        "paymentInfo": {
+            "preferredMethod": "string",
+            "bankName": "string",
+            "accountNumber": "string",
+            "routingNumber": "string",
+            "currency": "string",
+            "paymentSchedule": "string"
+        },
+        "marketingAssets": [
+            {
+                "id": "string",
+                "type": "string",
+                "title": "string",
+                "url": "string",
+                "lastUpdated": "string (date)"
+            }
+        ],
+        "documents": [
+            {
+                "documentId": "string",
+                "type": "string",
+                "title": "string",
+                "uploadDate": "string (date)",
+                "url": "string"
+            }
+        ]
+    },
+    "Subscriber": {
+        "id": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "status": "string (enum: 'Active', 'Inactive', 'Converted')",
+        "subscriptionDate": "string (datetime)",
+        "source": "string",
+        "preferences": {
+            "courseInterests": "string[]",
+            "preferredFormat": "string[]",
+            "communicationFrequency": "string",
+            "newsletterOptIn": "boolean"
+        },
+        "professionalInfo": {
+            "currentRole": "string",
+            "company": "string",
+            "industry": "string",
+            "experienceLevel": "string"
+        },
+        "leadStatus": {
+            "currentState": "string",
+            "lastContactDate": "string (datetime)",
+            "assignedTo": "string",
+            "notes": "string"
+        },
+        "interactions": [
+            {
+                "date": "string (datetime)",
+                "type": "string",
+                "details": "string"
+            }
+        ],
+        "marketingConsent": {
+            "email": "boolean",
+            "phone": "boolean",
+            "consentDate": "string (datetime)",
+            "lastUpdated": "string (datetime)"
+        }
+    },
+    "SkillJourney": {
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "status": "string (enum: 'Active', 'Inactive')",
+        "level": "string",
+        "estimatedDuration": "string",
+        "targetAudience": "string[]",
+        "prerequisites": "string[]",
+        "learningObjectives": "string[]",
+        "courses": [
+            {
+                "sequence": "number",
+                "courseCode": "string",
+                "required": "boolean",
+                "description": "string"
+            }
+        ],
+        "certification": {
+            "name": "string",
+            "validityPeriod": "string",
+            "requirements": "string[]"
+        },
+        "pricing": {
+            "individualPrice": "number",
+            "corporatePrice": "number",
+            "earlyBirdDiscount": "number",
+            "groupDiscountThreshold": "number"
+        },
+        "metrics": {
+            "enrolledStudents": "number",
+            "completionRate": "number",
+            "averageDuration": "string",
+            "satisfactionScore": "number"
+        }
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriveraTech Client Portal</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/client-portal/css/client.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-content">
+            <img src="/trivera_system_logos/client_portal_logo.png" alt="Client Portal" class="header-logo">
+            <h1>Client Portal</h1>
+            <div class="header-actions">
+                <span id="companyName" class="company-name"></span>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+        <nav class="dashboard-nav">
+            <div class="nav-section">
+                <h3>Training Management</h3>
+                <ul>
+                    <li><a href="#sessions">Training Sessions</a></li>
+                    <li><a href="#courses">Available Courses</a></li>
+                    <li><a href="#students">Student Management</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h3>Administration</h3>
+                <ul>
+                    <li><a href="#billing">Billing & Payments</a></li>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#contact">Contact Support</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="dashboard-content">
+            <div class="dashboard-welcome">
+                <h2>Welcome to Your Training Portal</h2>
+                <p>Manage your organization's training programs and track student progress.</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Active Sessions</h3>
+                    <p class="stat-number">3</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Enrolled Students</h3>
+                    <p class="stat-number">24</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed Courses</h3>
+                    <p class="stat-number">12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Upcoming Sessions</h3>
+                    <p class="stat-number">2</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="btn btn-primary">Schedule Training</button>
+                    <button class="btn btn-primary">Add Students</button>
+                    <button class="btn btn-primary">View Reports</button>
+                    <button class="btn btn-primary">Contact Support</button>
+                </div>
+            </div>
+
+            <div class="upcoming-sessions">
+                <h3>Upcoming Training Sessions</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Date</th>
+                            <th>Students</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java Programming Basics</td>
+                            <td>Feb 15, 2024</td>
+                            <td>8/10</td>
+                            <td>Virtual</td>
+                            <td>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>Spring Framework Essentials</td>
+                            <td>Mar 1, 2024</td>
+                            <td>6/12</td>
+                            <td>On-site</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/client-portal/js/dashboard.js"></script>
+</body>
+</html>

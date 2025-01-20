@@ -1,0 +1,202 @@
+[
+    {
+        "id": "1706173800000",
+        "employeeId": "EMP001",
+        "employeeName": "Sarah Johnson",
+        "actionType": "Deleted",
+        "details": "Removed deprecated Docker Fundamentals course (TT2030)",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T12:30:00.000Z"
+    },
+    {
+        "id": "1706171100000",
+        "employeeId": "EMP005",
+        "employeeName": "Alex Thompson",
+        "actionType": "Created",
+        "details": "Added new AI/ML certification track",
+        "module": "System",
+        "status": "Pending",
+        "timestamp": "2024-01-25T11:45:00.000Z"
+    },
+    {
+        "id": "1706167500000",
+        "employeeId": "EMP003",
+        "employeeName": "Emily Rodriguez",
+        "actionType": "Import",
+        "details": "Imported bulk student registrations for TechCorp Q1 sessions",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:45:00.000Z"
+    },
+    {
+        "id": "1706164800000",
+        "employeeId": "EMP002",
+        "employeeName": "Michael Chen",
+        "actionType": "Reject",
+        "details": "Rejected course session modification request - insufficient notice period",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T10:00:00.000Z"
+    },
+    {
+        "id": "1706161200000",
+        "employeeId": "EMP004",
+        "employeeName": "David Wilson",
+        "actionType": "Updated",
+        "details": "Updated virtual lab environments for Kubernetes courses",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T09:00:00.000Z"
+    },
+    {
+        "id": "1706158500000",
+        "employeeId": "EMP001",
+        "employeeName": "Sarah Johnson",
+        "actionType": "Review",
+        "details": "Completed quarterly review of course materials",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-25T08:15:00.000Z"
+    },
+    {
+        "id": "1706155800000",
+        "employeeId": "EMP005",
+        "employeeName": "Alex Thompson",
+        "actionType": "Updated",
+        "details": "Modified instructor compensation rates for specialized courses",
+        "module": "Instructors",
+        "status": "Pending",
+        "timestamp": "2024-01-25T07:30:00.000Z"
+    },
+    {
+        "id": "1706153100000",
+        "employeeId": "EMP003",
+        "employeeName": "Emily Rodriguez",
+        "actionType": "Created",
+        "details": "Set up new partner portal access for GlobalTech Solutions",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:45:00.000Z"
+    },
+    {
+        "id": "1706150400000",
+        "employeeId": "EMP002",
+        "employeeName": "Michael Chen",
+        "actionType": "Export",
+        "details": "Generated instructor availability report for Q2 2024",
+        "module": "Instructors",
+        "status": "Complete",
+        "timestamp": "2024-01-25T06:00:00.000Z"
+    },
+    {
+        "id": "1706147700000",
+        "employeeId": "EMP004",
+        "employeeName": "David Wilson",
+        "actionType": "Assign",
+        "details": "Assigned backup instructors for February sessions",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-25T05:15:00.000Z"
+    },
+    {
+        "id": "1705987200000",
+        "employeeId": "EMP001",
+        "employeeName": "Sarah Johnson",
+        "actionType": "Created",
+        "details": "Created new course: Advanced React Development (TT3045)",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-23T09:00:00.000Z"
+    },
+    {
+        "id": "1705984500000",
+        "employeeId": "EMP002",
+        "employeeName": "Michael Chen",
+        "actionType": "Updated",
+        "details": "Updated instructor availability for Q1 2024",
+        "module": "Instructors",
+        "status": "Complete",
+        "timestamp": "2024-01-23T08:15:00.000Z"
+    },
+    {
+        "id": "1705982700000",
+        "employeeId": "EMP003",
+        "employeeName": "Emily Rodriguez",
+        "actionType": "Approved",
+        "details": "Approved private session request for TechCorp (Java Fundamentals)",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-23T07:45:00.000Z"
+    },
+    {
+        "id": "1705981800000",
+        "employeeId": "EMP001",
+        "employeeName": "Sarah Johnson",
+        "actionType": "Updated",
+        "details": "Updated Spring Boot curriculum with new microservices content",
+        "module": "Courses",
+        "status": "Complete",
+        "timestamp": "2024-01-23T07:30:00.000Z"
+    },
+    {
+        "id": "1705977300000",
+        "employeeId": "EMP004",
+        "employeeName": "David Wilson",
+        "actionType": "Assigned",
+        "details": "Assigned John Smith to upcoming Python for Data Science session",
+        "module": "Course Sessions",
+        "status": "Complete",
+        "timestamp": "2024-01-23T06:15:00.000Z"
+    },
+    {
+        "id": "1705975500000",
+        "employeeId": "EMP002",
+        "employeeName": "Michael Chen",
+        "actionType": "Created",
+        "details": "Created new public session for Cloud Architecture (TT4020)",
+        "module": "Course Sessions",
+        "status": "Pending",
+        "timestamp": "2024-01-23T05:45:00.000Z"
+    },
+    {
+        "id": "1705972800000",
+        "employeeId": "EMP003",
+        "employeeName": "Emily Rodriguez",
+        "actionType": "Reviewed",
+        "details": "Reviewed and updated instructor certifications",
+        "module": "Instructors",
+        "status": "Complete",
+        "timestamp": "2024-01-23T05:00:00.000Z"
+    },
+    {
+        "id": "1705969200000",
+        "employeeId": "EMP001",
+        "employeeName": "Sarah Johnson",
+        "actionType": "Updated",
+        "details": "Updated pricing for enterprise client packages",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-23T04:00:00.000Z"
+    },
+    {
+        "id": "1705966500000",
+        "employeeId": "EMP004",
+        "employeeName": "David Wilson",
+        "actionType": "Created",
+        "details": "Created new instructor profile for Jane Doe",
+        "module": "Instructors",
+        "status": "Pending",
+        "timestamp": "2024-01-23T03:15:00.000Z"
+    },
+    {
+        "id": "1705963800000",
+        "employeeId": "EMP002",
+        "employeeName": "Michael Chen",
+        "actionType": "Exported",
+        "details": "Generated Q4 2023 course performance report",
+        "module": "System",
+        "status": "Complete",
+        "timestamp": "2024-01-23T02:30:00.000Z"
+    }
+]

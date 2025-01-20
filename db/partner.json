@@ -1,0 +1,865 @@
+{
+    "partners": [
+        {
+            "id": "PARTNER001",
+            "companyName": "Global Tech Training Solutions",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "David",
+                "lastName": "Wilson",
+                "title": "Partnership Director",
+                "email": "david.wilson@gtts.com",
+                "phone": "+1-555-123-7890"
+            },
+            "billingContact": {
+                "firstName": "Amanda",
+                "lastName": "Martinez",
+                "title": "Finance Director",
+                "email": "amanda.martinez@gtts.com",
+                "phone": "+1-555-234-5678"
+            },
+            "address": {
+                "street": "789 Partner Plaza",
+                "city": "Chicago",
+                "state": "IL",
+                "zipCode": "60601",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Midwest"
+                ],
+                "states": [
+                    "IL",
+                    "IN",
+                    "MI",
+                    "OH",
+                    "WI"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 20,
+                "volumeIncentives": [
+                    {
+                        "threshold": 50000,
+                        "rate": 25
+                    },
+                    {
+                        "threshold": 100000,
+                        "rate": 30
+                    }
+                ],
+                "specialPromotions": [
+                    {
+                        "courseCode": "TT2100",
+                        "rate": 25,
+                        "startDate": "2024-01-01",
+                        "endDate": "2024-03-31"
+                    }
+                ]
+            },
+            "performance": {
+                "ytdRevenue": 75000,
+                "ytdCommissions": 15000,
+                "totalStudentsReferred": 45,
+                "activeEnrollments": 12
+            },
+            "paymentInfo": {
+                "preferredMethod": "Direct Deposit",
+                "bankName": "First National Bank",
+                "accountNumber": "****4321",
+                "routingNumber": "****5678",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA001",
+                    "type": "Brochure",
+                    "title": "Java Training Catalog 2024",
+                    "url": "/marketing/partners/PARTNER001/java_catalog_2024.pdf",
+                    "lastUpdated": "2024-01-01"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT001-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER001/agreement_2024.pdf"
+                },
+                {
+                    "documentId": "DOC-PT001-002",
+                    "type": "Territory",
+                    "title": "Territory Assignment Document",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER001/territory_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER002",
+            "companyName": "West Coast Learning Partners",
+            "status": "Active",
+            "partnerType": "Referral",
+            "primaryContact": {
+                "firstName": "Jennifer",
+                "lastName": "Lee",
+                "title": "Business Development Manager",
+                "email": "jennifer.lee@wclp.com",
+                "phone": "+1-555-345-6789"
+            },
+            "billingContact": {
+                "firstName": "Thomas",
+                "lastName": "Rodriguez",
+                "title": "Accounting Manager",
+                "email": "thomas.rodriguez@wclp.com",
+                "phone": "+1-555-456-7890"
+            },
+            "address": {
+                "street": "321 Tech Boulevard",
+                "city": "San Francisco",
+                "state": "CA",
+                "zipCode": "94105",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "West Coast"
+                ],
+                "states": [
+                    "CA",
+                    "OR",
+                    "WA"
+                ],
+                "exclusivity": false,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 15,
+                "volumeIncentives": [
+                    {
+                        "threshold": 25000,
+                        "rate": 20
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 35000,
+                "ytdCommissions": 5250,
+                "totalStudentsReferred": 20,
+                "activeEnrollments": 8
+            },
+            "paymentInfo": {
+                "preferredMethod": "Wire Transfer",
+                "bankName": "Pacific Bank",
+                "accountNumber": "****8765",
+                "routingNumber": "****4321",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA002",
+                    "type": "Digital",
+                    "title": "Web Development Course Bundle",
+                    "url": "/marketing/partners/PARTNER002/web_dev_bundle.pdf",
+                    "lastUpdated": "2024-01-15"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT002-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER002/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER003",
+            "companyName": "Northeast Training Alliance",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "Michael",
+                "lastName": "Sullivan",
+                "title": "Partner Relations Director",
+                "email": "michael.sullivan@nta.com",
+                "phone": "+1-555-567-8901"
+            },
+            "billingContact": {
+                "firstName": "Emily",
+                "lastName": "Chen",
+                "title": "Finance Director",
+                "email": "emily.chen@nta.com",
+                "phone": "+1-555-678-9012"
+            },
+            "address": {
+                "street": "567 Training Center Drive",
+                "city": "Boston",
+                "state": "MA",
+                "zipCode": "02110",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Northeast"
+                ],
+                "states": [
+                    "MA",
+                    "NY",
+                    "CT",
+                    "RI",
+                    "NH",
+                    "VT",
+                    "ME"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 18,
+                "volumeIncentives": [
+                    {
+                        "threshold": 75000,
+                        "rate": 22
+                    },
+                    {
+                        "threshold": 150000,
+                        "rate": 25
+                    }
+                ],
+                "specialPromotions": [
+                    {
+                        "courseCode": "TT3320",
+                        "rate": 20,
+                        "startDate": "2024-01-01",
+                        "endDate": "2024-06-30"
+                    }
+                ]
+            },
+            "performance": {
+                "ytdRevenue": 95000,
+                "ytdCommissions": 17100,
+                "totalStudentsReferred": 55,
+                "activeEnrollments": 15
+            },
+            "paymentInfo": {
+                "preferredMethod": "Direct Deposit",
+                "bankName": "Northeast Bank",
+                "accountNumber": "****2345",
+                "routingNumber": "****8901",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA003",
+                    "type": "Brochure",
+                    "title": "Enterprise Java Training Catalog",
+                    "url": "/marketing/partners/PARTNER003/enterprise_java_catalog.pdf",
+                    "lastUpdated": "2024-01-10"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT003-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER003/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER004",
+            "companyName": "Southern Tech Education",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "Robert",
+                "lastName": "Johnson",
+                "title": "CEO",
+                "email": "robert.johnson@ste.com",
+                "phone": "+1-555-789-0123"
+            },
+            "billingContact": {
+                "firstName": "Sarah",
+                "lastName": "Williams",
+                "title": "Controller",
+                "email": "sarah.williams@ste.com",
+                "phone": "+1-555-890-1234"
+            },
+            "address": {
+                "street": "789 Education Row",
+                "city": "Atlanta",
+                "state": "GA",
+                "zipCode": "30303",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Southeast"
+                ],
+                "states": [
+                    "GA",
+                    "FL",
+                    "SC",
+                    "NC",
+                    "AL"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 17,
+                "volumeIncentives": [
+                    {
+                        "threshold": 50000,
+                        "rate": 20
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 45000,
+                "ytdCommissions": 7650,
+                "totalStudentsReferred": 30,
+                "activeEnrollments": 12
+            },
+            "paymentInfo": {
+                "preferredMethod": "Wire Transfer",
+                "bankName": "Southern Bank",
+                "accountNumber": "****3456",
+                "routingNumber": "****9012",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA004",
+                    "type": "Digital",
+                    "title": "Cloud Technology Training",
+                    "url": "/marketing/partners/PARTNER004/cloud_training.pdf",
+                    "lastUpdated": "2024-01-20"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT004-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER004/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER005",
+            "companyName": "Midwest Learning Solutions",
+            "status": "Active",
+            "partnerType": "Referral",
+            "primaryContact": {
+                "firstName": "David",
+                "lastName": "Miller",
+                "title": "Partnership Manager",
+                "email": "david.miller@mls.com",
+                "phone": "+1-555-901-2345"
+            },
+            "billingContact": {
+                "firstName": "Patricia",
+                "lastName": "Brown",
+                "title": "Finance Manager",
+                "email": "patricia.brown@mls.com",
+                "phone": "+1-555-012-3456"
+            },
+            "address": {
+                "street": "234 Training Lane",
+                "city": "Chicago",
+                "state": "IL",
+                "zipCode": "60601",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Midwest"
+                ],
+                "states": [
+                    "IL",
+                    "IN",
+                    "MI",
+                    "OH",
+                    "WI"
+                ],
+                "exclusivity": false,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 15,
+                "volumeIncentives": [
+                    {
+                        "threshold": 30000,
+                        "rate": 18
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 25000,
+                "ytdCommissions": 3750,
+                "totalStudentsReferred": 15,
+                "activeEnrollments": 6
+            },
+            "paymentInfo": {
+                "preferredMethod": "Direct Deposit",
+                "bankName": "Midwest Bank",
+                "accountNumber": "****4567",
+                "routingNumber": "****0123",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA005",
+                    "type": "Presentation",
+                    "title": "Corporate Training Solutions",
+                    "url": "/marketing/partners/PARTNER005/corporate_training.pdf",
+                    "lastUpdated": "2024-01-25"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT005-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER005/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER006",
+            "companyName": "Texas Training Partners",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "James",
+                "lastName": "Rodriguez",
+                "title": "Sales Director",
+                "email": "james.rodriguez@ttp.com",
+                "phone": "+1-555-123-4567"
+            },
+            "billingContact": {
+                "firstName": "Maria",
+                "lastName": "Garcia",
+                "title": "Accounting Director",
+                "email": "maria.garcia@ttp.com",
+                "phone": "+1-555-234-5678"
+            },
+            "address": {
+                "street": "456 Learning Plaza",
+                "city": "Austin",
+                "state": "TX",
+                "zipCode": "78701",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Southwest"
+                ],
+                "states": [
+                    "TX",
+                    "OK",
+                    "NM",
+                    "AZ"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 18,
+                "volumeIncentives": [
+                    {
+                        "threshold": 60000,
+                        "rate": 22
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 55000,
+                "ytdCommissions": 9900,
+                "totalStudentsReferred": 35,
+                "activeEnrollments": 10
+            },
+            "paymentInfo": {
+                "preferredMethod": "Wire Transfer",
+                "bankName": "Texas Bank",
+                "accountNumber": "****5678",
+                "routingNumber": "****1234",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA006",
+                    "type": "Brochure",
+                    "title": "Technical Certification Paths",
+                    "url": "/marketing/partners/PARTNER006/cert_paths.pdf",
+                    "lastUpdated": "2024-01-30"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT006-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER006/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER007",
+            "companyName": "Mountain Region Education",
+            "status": "Active",
+            "partnerType": "Referral",
+            "primaryContact": {
+                "firstName": "William",
+                "lastName": "Thompson",
+                "title": "Operations Director",
+                "email": "william.thompson@mre.com",
+                "phone": "+1-555-345-6789"
+            },
+            "billingContact": {
+                "firstName": "Linda",
+                "lastName": "Martinez",
+                "title": "Finance Director",
+                "email": "linda.martinez@mre.com",
+                "phone": "+1-555-456-7890"
+            },
+            "address": {
+                "street": "789 Mountain View Drive",
+                "city": "Denver",
+                "state": "CO",
+                "zipCode": "80202",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Mountain"
+                ],
+                "states": [
+                    "CO",
+                    "UT",
+                    "MT",
+                    "WY",
+                    "ID"
+                ],
+                "exclusivity": false,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 16,
+                "volumeIncentives": [
+                    {
+                        "threshold": 40000,
+                        "rate": 19
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 30000,
+                "ytdCommissions": 4800,
+                "totalStudentsReferred": 18,
+                "activeEnrollments": 7
+            },
+            "paymentInfo": {
+                "preferredMethod": "Direct Deposit",
+                "bankName": "Mountain Bank",
+                "accountNumber": "****6789",
+                "routingNumber": "****2345",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA007",
+                    "type": "Digital",
+                    "title": "Remote Learning Solutions",
+                    "url": "/marketing/partners/PARTNER007/remote_learning.pdf",
+                    "lastUpdated": "2024-02-01"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT007-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER007/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER008",
+            "companyName": "Pacific Northwest Training",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "Richard",
+                "lastName": "Lee",
+                "title": "Managing Director",
+                "email": "richard.lee@pnt.com",
+                "phone": "+1-555-567-8901"
+            },
+            "billingContact": {
+                "firstName": "Karen",
+                "lastName": "Wilson",
+                "title": "Financial Controller",
+                "email": "karen.wilson@pnt.com",
+                "phone": "+1-555-678-9012"
+            },
+            "address": {
+                "street": "123 Evergreen Way",
+                "city": "Portland",
+                "state": "OR",
+                "zipCode": "97201",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Northwest"
+                ],
+                "states": [
+                    "OR",
+                    "WA",
+                    "ID"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 19,
+                "volumeIncentives": [
+                    {
+                        "threshold": 45000,
+                        "rate": 23
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 40000,
+                "ytdCommissions": 7600,
+                "totalStudentsReferred": 25,
+                "activeEnrollments": 9
+            },
+            "paymentInfo": {
+                "preferredMethod": "Wire Transfer",
+                "bankName": "Pacific Bank",
+                "accountNumber": "****7890",
+                "routingNumber": "****3456",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA008",
+                    "type": "Presentation",
+                    "title": "DevOps Training Solutions",
+                    "url": "/marketing/partners/PARTNER008/devops_training.pdf",
+                    "lastUpdated": "2024-02-05"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT008-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER008/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER009",
+            "companyName": "Florida Tech Training",
+            "status": "Active",
+            "partnerType": "Referral",
+            "primaryContact": {
+                "firstName": "Susan",
+                "lastName": "Anderson",
+                "title": "Business Development Director",
+                "email": "susan.anderson@ftt.com",
+                "phone": "+1-555-789-0123"
+            },
+            "billingContact": {
+                "firstName": "John",
+                "lastName": "Taylor",
+                "title": "Finance Manager",
+                "email": "john.taylor@ftt.com",
+                "phone": "+1-555-890-1234"
+            },
+            "address": {
+                "street": "456 Palm Avenue",
+                "city": "Miami",
+                "state": "FL",
+                "zipCode": "33101",
+                "country": "USA"
+            },
+            "territory": {
+                "regions": [
+                    "Southeast"
+                ],
+                "states": [
+                    "FL"
+                ],
+                "exclusivity": false,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 15,
+                "volumeIncentives": [
+                    {
+                        "threshold": 35000,
+                        "rate": 18
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 28000,
+                "ytdCommissions": 4200,
+                "totalStudentsReferred": 16,
+                "activeEnrollments": 5
+            },
+            "paymentInfo": {
+                "preferredMethod": "Direct Deposit",
+                "bankName": "Florida Bank",
+                "accountNumber": "****8901",
+                "routingNumber": "****4567",
+                "currency": "USD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA009",
+                    "type": "Brochure",
+                    "title": "Cloud Computing Certifications",
+                    "url": "/marketing/partners/PARTNER009/cloud_cert.pdf",
+                    "lastUpdated": "2024-02-10"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT009-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER009/agreement_2024.pdf"
+                }
+            ]
+        },
+        {
+            "id": "PARTNER010",
+            "companyName": "Canadian Tech Education",
+            "status": "Active",
+            "partnerType": "Reseller",
+            "primaryContact": {
+                "firstName": "Michael",
+                "lastName": "Brown",
+                "title": "CEO",
+                "email": "michael.brown@cte.com",
+                "phone": "+1-555-901-2345"
+            },
+            "billingContact": {
+                "firstName": "Jennifer",
+                "lastName": "Clark",
+                "title": "Finance Director",
+                "email": "jennifer.clark@cte.com",
+                "phone": "+1-555-012-3456"
+            },
+            "address": {
+                "street": "789 Technology Drive",
+                "city": "Toronto",
+                "state": "ON",
+                "zipCode": "M5H 2N2",
+                "country": "Canada"
+            },
+            "territory": {
+                "regions": [
+                    "Canada"
+                ],
+                "states": [
+                    "ON",
+                    "BC",
+                    "AB",
+                    "QC"
+                ],
+                "exclusivity": true,
+                "effectiveDate": "2024-01-01",
+                "expiryDate": "2024-12-31"
+            },
+            "commissionStructure": {
+                "baseRate": 20,
+                "volumeIncentives": [
+                    {
+                        "threshold": 80000,
+                        "rate": 25
+                    }
+                ],
+                "specialPromotions": []
+            },
+            "performance": {
+                "ytdRevenue": 65000,
+                "ytdCommissions": 13000,
+                "totalStudentsReferred": 40,
+                "activeEnrollments": 14
+            },
+            "paymentInfo": {
+                "preferredMethod": "Wire Transfer",
+                "bankName": "Royal Bank",
+                "accountNumber": "****9012",
+                "routingNumber": "****5678",
+                "currency": "CAD",
+                "paymentSchedule": "Monthly"
+            },
+            "marketingAssets": [
+                {
+                    "id": "MA010",
+                    "type": "Digital",
+                    "title": "Enterprise Training Solutions",
+                    "url": "/marketing/partners/PARTNER010/enterprise_training.pdf",
+                    "lastUpdated": "2024-02-15"
+                }
+            ],
+            "documents": [
+                {
+                    "documentId": "DOC-PT010-001",
+                    "type": "Agreement",
+                    "title": "Partner Agreement 2024",
+                    "uploadDate": "2024-01-01",
+                    "url": "/documents/partners/PARTNER010/agreement_2024.pdf"
+                }
+            ]
+        }
+    ]
+}

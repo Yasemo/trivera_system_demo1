@@ -1,0 +1,391 @@
+{
+  "courses": [
+    {
+      "courseCode": "TT2000",
+      "courseTitle": "Getting Started with Programming, OO & Java Basics for Non-Developers",
+      "courseSubtitle": "Kickstart Your Software Development Skills with this Gentle Introduction to Coding, Object Oriented Development and Java",
+      "status": "Approved",
+      "skillLevel": "Basic",
+      "duration": "5 Days",
+      "publicSeatPrice": 2695,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License",
+        "On Public Schedule",
+        "Blended"
+      ],
+      "catalogSummary": "Getting Started with Programming, OO and Java Basics for Non-Developers is a fast-paced, five day course designed to provide you with a first look at how to code in Java to a very basic level. You'll gain light hands-on programming experience, while you begin your journey to develop a programmer's mindset."
+    },
+    {
+      "courseCode": "TT2100",
+      "courseTitle": "Core Java Programming Developer's Workshop",
+      "courseSubtitle": "Master Core Java Programming Concepts and Best Practices",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "5 Days",
+      "publicSeatPrice": 2895,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "This comprehensive workshop provides developers with a deep dive into core Java programming concepts, covering object-oriented principles, collections, exception handling, and more."
+    },
+    {
+      "courseCode": "TT2104",
+      "courseTitle": "Fast Track to Core Java Programming for OO Experienced Developers",
+      "courseSubtitle": "Accelerated Java Training for Developers with Object-Oriented Experience",
+      "status": "Approved",
+      "skillLevel": "Advanced",
+      "duration": "3 Days",
+      "publicSeatPrice": 2195,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "An accelerated course designed for developers who already understand object-oriented concepts and want to quickly become proficient in Java programming."
+    },
+    {
+      "courseCode": "TT2120",
+      "courseTitle": "Basic Java Programming for Developers New to OO (C, COBOL, etc.)",
+      "courseSubtitle": "Transition from Procedural to Object-Oriented Programming with Java",
+      "status": "Approved",
+      "skillLevel": "Basic",
+      "duration": "5 Days",
+      "publicSeatPrice": 2695,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License"
+      ],
+      "catalogSummary": "Learn Java programming from a procedural developer's perspective, with special emphasis on transitioning to object-oriented thinking and design patterns."
+    },
+    {
+      "courseCode": "TT2135",
+      "courseTitle": "Migrating to Java 17 | Java 17 New Features & Skills",
+      "courseSubtitle": "Master the Latest Features and Improvements in Java 17",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "3 Days",
+      "publicSeatPrice": 2195,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "Explore and learn to implement the new features and improvements introduced in Java 17, including sealed classes, pattern matching, and other enhancements."
+    },
+    {
+      "courseCode": "TT2136",
+      "courseTitle": "Migrating Java 17 to Java 21 | Java 21 New Features and Skills",
+      "courseSubtitle": "Stay Current with Java's Latest Innovations",
+      "status": "Approved",
+      "skillLevel": "Advanced",
+      "duration": "2 Days",
+      "publicSeatPrice": 1795,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "On Public Schedule",
+        "Blended"
+      ],
+      "catalogSummary": "Update your Java skills to version 21, covering virtual threads, structured concurrency, and other cutting-edge features introduced since Java 17."
+    },
+    {
+      "courseCode": "TT2138",
+      "courseTitle": "Migrating Java 8 to Java 17 | Java 17 New Features and Skills",
+      "courseSubtitle": "Comprehensive Update from Java 8 to Modern Java",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "4 Days",
+      "publicSeatPrice": 2495,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License"
+      ],
+      "catalogSummary": "Bridge the gap between Java 8 and Java 17, covering all major features and improvements introduced across multiple Java versions."
+    },
+    {
+      "courseCode": "TT2211",
+      "courseTitle": "Intermediate Java Programming | Next-Level Java Skills",
+      "courseSubtitle": "Advanced Concepts for Professional Java Developers",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "4 Days",
+      "publicSeatPrice": 2495,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "Take your Java skills to the next level with advanced topics including concurrency, functional programming, and modern Java APIs."
+    },
+    {
+      "courseCode": "TT3320",
+      "courseTitle": "Core Spring Quick Start | Spring Essentials, Spring Boot, AOP, Persistence & More",
+      "courseSubtitle": "Comprehensive Introduction to the Spring Framework Ecosystem",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "5 Days",
+      "publicSeatPrice": 2895,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License",
+        "Blended"
+      ],
+      "catalogSummary": "Get up to speed with Spring Framework, covering core concepts, Spring Boot, AOP, data access, and best practices for building modern Java applications."
+    },
+    {
+      "courseCode": "TT3335",
+      "courseTitle": "Mastering Spring 5.x Developer Boot Camp",
+      "courseSubtitle": "Intensive Spring Framework Training for Professional Developers",
+      "status": "Approved",
+      "skillLevel": "Advanced",
+      "duration": "5 Days",
+      "publicSeatPrice": 2995,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "An intensive boot camp covering advanced Spring Framework topics, microservices architecture, and cloud-native application development."
+    },
+    {
+      "courseCode": "TT3353",
+      "courseTitle": "Introduction to Reactive Spring",
+      "courseSubtitle": "Building Reactive Applications with Spring WebFlux",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "3 Days",
+      "publicSeatPrice": 2195,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "On Public Schedule",
+        "Blended"
+      ],
+      "catalogSummary": "Learn to build reactive applications using Spring WebFlux, covering reactive streams, functional programming, and non-blocking architectures."
+    },
+    {
+      "courseCode": "TT3503",
+      "courseTitle": "Test Driven Development (TDD) and Unit Testing Essentials",
+      "courseSubtitle": "Best Practices for Quality Software Development",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "3 Days",
+      "publicSeatPrice": 2195,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License"
+      ],
+      "catalogSummary": "Master test-driven development practices and unit testing techniques using JUnit and related testing frameworks."
+    },
+    {
+      "courseCode": "TT3511",
+      "courseTitle": "Introduction to Test Automation",
+      "courseSubtitle": "Fundamentals of Automated Testing in Modern Software Development",
+      "status": "Approved",
+      "skillLevel": "Basic",
+      "duration": "4 Days",
+      "publicSeatPrice": 2495,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "Learn the fundamentals of test automation, including tool selection, framework design, and best practices for sustainable test automation."
+    },
+    {
+      "courseCode": "TT4001",
+      "courseTitle": "Introduction to HTML5 / CSS3 and Responsive Design",
+      "courseSubtitle": "Modern Web Development Fundamentals",
+      "status": "Approved",
+      "skillLevel": "Basic",
+      "duration": "4 Days",
+      "publicSeatPrice": 2495,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Courseware for License"
+      ],
+      "catalogSummary": "Get started with modern web development using HTML5, CSS3, and responsive design principles for creating mobile-friendly websites."
+    },
+    {
+      "courseCode": "TT4010",
+      "courseTitle": "JavaScript Programming Fundamentals",
+      "courseSubtitle": "Essential JavaScript Skills for Modern Web Development",
+      "status": "Approved",
+      "skillLevel": "Basic",
+      "duration": "4 Days",
+      "publicSeatPrice": 2495,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "On Public Schedule",
+        "Blended"
+      ],
+      "catalogSummary": "Learn core JavaScript programming concepts, DOM manipulation, and modern JavaScript features for building interactive web applications."
+    },
+    {
+      "courseCode": "TT4020",
+      "courseTitle": "Advanced JavaScript and Modern Web Development",
+      "courseSubtitle": "Master Modern JavaScript Features and Web APIs",
+      "status": "Approved",
+      "skillLevel": "Advanced",
+      "duration": "5 Days",
+      "publicSeatPrice": 2895,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "Deep dive into advanced JavaScript topics, modern web APIs, and contemporary development practices for building sophisticated web applications."
+    },
+    {
+      "courseCode": "TT4030",
+      "courseTitle": "React.js Essentials",
+      "courseSubtitle": "Building Modern User Interfaces with React",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "4 Days",
+      "publicSeatPrice": 2595,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Blended"
+      ],
+      "catalogSummary": "Learn to build modern user interfaces using React.js, covering components, state management, hooks, and best practices."
+    },
+    {
+      "courseCode": "TT4040",
+      "courseTitle": "Node.js Application Development",
+      "courseSubtitle": "Server-Side JavaScript Development with Node.js",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "4 Days",
+      "publicSeatPrice": 2595,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "On Public Schedule",
+        "Courseware for License"
+      ],
+      "catalogSummary": "Master Node.js for building scalable server-side applications, covering Express.js, APIs, databases, and deployment strategies."
+    },
+    {
+      "courseCode": "TT4050",
+      "courseTitle": "Full Stack JavaScript Development",
+      "courseSubtitle": "End-to-End Web Development with JavaScript",
+      "status": "Approved",
+      "skillLevel": "Advanced",
+      "duration": "5 Days",
+      "publicSeatPrice": 2995,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "Comprehensive training in full-stack JavaScript development, covering both front-end and back-end technologies, including React, Node.js, and databases."
+    },
+    {
+      "courseCode": "TT4060",
+      "courseTitle": "TypeScript Programming",
+      "courseSubtitle": "Type-Safe JavaScript Development",
+      "status": "Approved",
+      "skillLevel": "Intermediate",
+      "duration": "3 Days",
+      "publicSeatPrice": 2195,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person",
+        "Blended"
+      ],
+      "catalogSummary": "Learn TypeScript for building scalable JavaScript applications with static typing, object-oriented features, and modern development tools."
+    },
+    {
+      "courseCode": "TT1234",
+      "courseTitle": "spongebob sqaure",
+      "courseSubtitle": "SKIBIDI",
+      "status": "Draft",
+      "skillLevel": "Intermediate",
+      "duration": "12 weeks",
+      "publicSeatPrice": 6,
+      "availableFormats": [
+        "Instructor-Led, Onsite In Person",
+        "Blended"
+      ],
+      "catalogSummary": "yo yo ma ok yeha yeah"
+    },
+    {
+      "courseCode": "TT2001",
+      "courseTitle": "wooooppy",
+      "courseSubtitle": "woooo",
+      "status": "Draft",
+      "skillLevel": "Basic",
+      "duration": "3 days",
+      "publicSeatPrice": 5,
+      "availableFormats": [
+        "On Public Schedule"
+      ],
+      "catalogSummary": "VEVRW"
+    },
+    {
+      "courseCode": "RB201",
+      "courseTitle": "OPTIMUS",
+      "courseSubtitle": "prime",
+      "status": "Draft",
+      "skillLevel": "Basic",
+      "duration": "5",
+      "publicSeatPrice": 5,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Instructor-Led, Onsite In Person"
+      ],
+      "catalogSummary": "xxxx"
+    },
+    {
+      "courseCode": "shrek",
+      "courseTitle": "shrek 2",
+      "courseSubtitle": "donkey",
+      "status": "Draft",
+      "skillLevel": "Basic",
+      "duration": "4",
+      "publicSeatPrice": 5,
+      "availableFormats": [
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ],
+      "catalogSummary": "deqndljkeqnljeqnqe"
+    },
+    {
+      "courseCode": "TT3000",
+      "courseTitle": "Bart Simpson",
+      "courseSubtitle": "SKIBIDI",
+      "status": "Draft",
+      "skillLevel": "Advanced",
+      "duration": "5 days",
+      "publicSeatPrice": 1000,
+      "availableFormats": [
+        "Instructor-Led Online",
+        "Courseware for License"
+      ],
+      "catalogSummary": "ommmmggggg"
+    },
+    {
+      "courseCode": "ted",
+      "courseTitle": "ted",
+      "courseSubtitle": "ted",
+      "status": "Draft",
+      "skillLevel": "Intermediate",
+      "duration": "5",
+      "publicSeatPrice": 299.98,
+      "catalogSummary": "red",
+      "availableFormats": [
+        "Instructor-Led, Onsite In Person",
+        "On Public Schedule"
+      ]
+    }
+  ]
+}

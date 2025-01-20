@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriveraTech Backoffice Dashboard</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/backoffice/css/backoffice.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <nav class="dashboard-nav">
+            <button id="toggleNav" class="nav-toggle">
+                <span class="toggle-icon">☰</span>
+            </button>
+            
+            <div class="nav-header">
+                <img src="/trivera_system_logos/backoffice_logo.png" alt="Backoffice Portal" class="nav-logo">
+                <a href="/backoffice/dashboard" class="nav-home">Home</a>
+            </div>
+
+            <div class="nav-sections">
+                <div class="nav-section">
+                    <button class="dropdown-toggle">Course Management</button>
+                    <ul class="dropdown-content">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#course-sessions">Course Sessions</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <button class="dropdown-toggle">User Management</button>
+                    <ul class="dropdown-content">
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#students">Students</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <button class="dropdown-toggle">System</button>
+                    <ul class="dropdown-content">
+                        <li><a href="#settings">Settings</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button id="logoutBtn" class="btn btn-secondary nav-logout">Logout</button>
+        </nav>
+
+        <main class="dashboard-content">
+            <div class="dashboard-welcome">
+                <h2 id="welcome-message">Welcome back</h2>
+                <p>Select a section from the navigation menu to get started.</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Active Sessions</h3>
+                    <p class="stat-number">12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Enrolled Students</h3>
+                    <p class="stat-number">156</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Clients</h3>
+                    <p class="stat-number">24</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Partners</h3>
+                    <p class="stat-number">8</p>
+                </div>
+            </div>
+
+            <div class="dashboard-graphs">
+                <div class="graph-container">
+                    <canvas id="enrollmentsChart"></canvas>
+                </div>
+                <div class="graph-container">
+                    <canvas id="subscribersChart"></canvas>
+                </div>
+            </div>
+
+            <div class="recent-activity activity-section">
+                <div class="activity-header">
+                    <h3>Activity</h3>
+                    <div class="activity-tabs">
+                        <button class="tab-btn active" data-doer-type="employee">Employee</button>
+                        <button class="tab-btn" data-doer-type="client">Client</button>
+                        <button class="tab-btn" data-doer-type="partner">Partner</button>
+                        <button class="tab-btn" data-doer-type="student">Student</button>
+                        <button class="tab-btn" data-doer-type="subscriber">Subscriber</button>
+                        <button class="tab-btn" data-doer-type="system">System</button>
+                    </div>
+                </div>
+                <div id="activity-table">
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>User</th>
+                                <th>Category</th>
+                                <th>Action</th>
+                                <th>Progress</th>
+                                <th>Status</th>
+                                <th>Latest Note</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activity-log">
+                            <!-- Activity data will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                <style>
+                    .dashboard-layout {
+                        position: relative;
+                    }
+                    .dashboard-nav {
+                        position: fixed;
+                        z-index: 100;
+                    }
+                    .dashboard-content {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .activity-section {
+                        position: relative;
+                        background: white;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        padding: 1.5rem;
+                        z-index: 1;
+                    }
+                    .activity-header {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .activity-header h3 {
+                        font-size: 1.25rem;
+                        color: #333;
+                        margin-bottom: 1rem;
+                    }
+
+                    .activity-tabs {
+                        display: flex;
+                        gap: 1.5rem;
+                        margin-bottom: 1.5rem;
+                        border-bottom: 1px solid #dee2e6;
+                        padding-bottom: 0.5rem;
+                    }
+                    .tab-btn {
+                        padding: 0.75rem 1.25rem;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        border-bottom: 2px solid transparent;
+                        font-weight: 500;
+                        color: #666;
+                        transition: all 0.3s ease;
+                        font-size: 1rem;
+                    }
+                    .tab-btn:hover {
+                        color: #333;
+                    }
+                    .tab-btn.active {
+                        color: #007bff;
+                        border-bottom-color: #007bff;
+                    }
+
+                    .activity-controls {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .activity-search-bar {
+                        width: 100%;
+                    }
+
+                    .activity-search-bar input {
+                        width: 100%;
+                        padding: 0.75rem 1rem;
+                        border: 1px solid #dee2e6;
+                        border-radius: 6px;
+                        font-size: 1rem;
+                        transition: border-color 0.2s;
+                    }
+
+                    .activity-search-bar input:focus {
+                        outline: none;
+                        border-color: #007bff;
+                        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                    }
+
+                    .filter-group {
+                        display: flex;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                    }
+
+                    .activity-filter-select {
+                        padding: 0.75rem 2rem 0.75rem 1rem;
+                        border: 1px solid #dee2e6;
+                        border-radius: 6px;
+                        font-size: 1rem;
+                        background-color: white;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-position: right 0.75rem center;
+                        background-size: 16px;
+                        appearance: none;
+                        min-width: 160px;
+                        flex: 1;
+                        transition: border-color 0.2s;
+                    }
+
+                    .activity-filter-select:focus {
+                        outline: none;
+                        border-color: #007bff;
+                        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                    }
+
+                    @media (max-width: 768px) {
+                        .filter-group {
+                            flex-direction: column;
+                        }
+
+                        .activity-filter-select {
+                            width: 100%;
+                        }
+                    }
+                    .progress-container {
+                        width: 100%;
+                        height: 20px;
+                        background: #eee;
+                        border-radius: 10px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .progress-bar {
+                        height: 100%;
+                        background: #007bff;
+                        border-radius: 10px;
+                        transition: width 0.3s ease;
+                    }
+                    .progress-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #333;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    .status-badge {
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 12px;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                    .status-badge.pending {
+                        background: #ffeeba;
+                        color: #856404;
+                    }
+                    .status-badge.in_progress {
+                        background: #b8daff;
+                        color: #004085;
+                    }
+                    .status-badge.completed {
+                        background: #c3e6cb;
+                        color: #155724;
+                    }
+                    .status-badge.failed {
+                        background: #f5c6cb;
+                        color: #721c24;
+                    }
+                    .status-badge.cancelled {
+                        background: #e2e3e5;
+                        color: #383d41;
+                    }
+                    #in-review-table tbody tr {
+                        cursor: pointer;
+                        transition: background-color 0.2s;
+                    }
+                    #in-review-table tbody tr:hover {
+                        background-color: #f8f9fa;
+                    }
+                    .modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        z-index: 1000;
+                        opacity: 0;
+                        transition: opacity 0.2s;
+                    }
+                    .modal.active {
+                        display: flex;
+                        opacity: 1;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .modal-content {
+                        background: white;
+                        border-radius: 8px;
+                        width: 90%;
+                        max-width: 600px;
+                        max-height: 90vh;
+                        overflow-y: auto;
+                    }
+                    .modal-header {
+                        padding: 1rem;
+                        border-bottom: 1px solid #dee2e6;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    .modal-body {
+                        padding: 1rem;
+                    }
+                    .modal-footer {
+                        padding: 1rem;
+                        border-top: 1px solid #dee2e6;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 0.5rem;
+                    }
+                    .modal-close {
+                        background: none;
+                        border: none;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        padding: 0.5rem;
+                    }
+                    .detail-grid {
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        gap: 0.5rem 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .detail-label {
+                        font-weight: 500;
+                        color: #6c757d;
+                    }
+                    .form-group {
+                        margin-bottom: 1rem;
+                    }
+                    .form-group label {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-weight: 500;
+                    }
+                    .form-group textarea {
+                        width: 100%;
+                        padding: 0.5rem;
+                        border: 1px solid #dee2e6;
+                        border-radius: 4px;
+                        resize: vertical;
+                        min-height: 100px;
+                    }
+                    .btn {
+                        padding: 0.5rem 1rem;
+                        border-radius: 4px;
+                        border: none;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+                    .btn-primary {
+                        background-color: #007bff;
+                        color: white;
+                    }
+                    .btn-secondary {
+                        background-color: #6c757d;
+                        color: white;
+                    }
+                </style>
+            </div>
+        </main>
+    </div>
+
+    <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="/backoffice/js/dashboard.js"></script>
+</body>
+</html>

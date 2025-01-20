@@ -1,0 +1,50 @@
+{
+    "employees": [
+        {
+            "id": "EMP001",
+            "firstName": "John",
+            "lastName": "Smith",
+            "email": "john.smith@trivera.com",
+            "role": "Admin",
+            "status": "Active",
+            "department": "Operations",
+            "permissions": [
+                "all"
+            ],
+            "lastLogin": "2025-01-15T23:14:26.275Z",
+            "password": "$2a$10$khH8kqips92g5cQrhLO3lOJWhthnBlEFV2GkTUFITRcqB5g6LVTEq"
+        },
+        {
+            "id": "EMP002",
+            "firstName": "Sarah",
+            "lastName": "Johnson",
+            "email": "sarah.johnson@trivera.com",
+            "role": "Course Coordinator",
+            "status": "Active",
+            "department": "Education",
+            "permissions": [
+                "courses",
+                "sessions",
+                "students"
+            ],
+            "lastLogin": null,
+            "password": "$2a$10$khH8kqips92g5cQrhLO3lOJWhthnBlEFV2GkTUFITRcqB5g6LVTEq"
+        },
+        {
+            "id": "EMP003",
+            "firstName": "Michael",
+            "lastName": "Davis",
+            "email": "michael.davis@trivera.com",
+            "role": "Sales Manager",
+            "status": "Active",
+            "department": "Sales",
+            "permissions": [
+                "clients",
+                "partners",
+                "courses"
+            ],
+            "lastLogin": null,
+            "password": "$2a$10$khH8kqips92g5cQrhLO3lOJWhthnBlEFV2GkTUFITRcqB5g6LVTEq"
+        }
+    ]
+}

@@ -1,0 +1,632 @@
+{
+    "skillJourneys": [
+        {
+            "id": "SJ001",
+            "title": "Java Enterprise Developer Path",
+            "description": "Comprehensive learning path for becoming a professional Java Enterprise developer",
+            "status": "Active",
+            "level": "Intermediate to Advanced",
+            "estimatedDuration": "12 weeks",
+            "targetAudience": [
+                "Java Developers",
+                "Backend Engineers",
+                "Full Stack Developers"
+            ],
+            "prerequisites": [
+                "Basic Java programming knowledge",
+                "Understanding of OOP concepts"
+            ],
+            "learningObjectives": [
+                "Master core Java concepts and best practices",
+                "Develop expertise in Spring Framework",
+                "Build enterprise-grade applications",
+                "Implement microservices architecture"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT2100",
+                    "required": true,
+                    "description": "Core Java Programming fundamentals"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT2211",
+                    "required": true,
+                    "description": "Advanced Java concepts and patterns"
+                },
+                {
+                    "sequence": 3,
+                    "courseCode": "TT3320",
+                    "required": true,
+                    "description": "Spring Framework essentials"
+                },
+                {
+                    "sequence": 4,
+                    "courseCode": "TT3353",
+                    "required": false,
+                    "description": "Optional: Reactive programming with Spring"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Java Enterprise Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Pass final assessment with 80% or higher"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 8500,
+                "corporatePrice": 7500,
+                "earlyBirdDiscount": 10,
+                "groupDiscountThreshold": 5
+            },
+            "metrics": {
+                "enrolledStudents": 45,
+                "completionRate": 85,
+                "averageDuration": "14 weeks",
+                "satisfactionScore": 4.7
+            }
+        },
+        {
+            "id": "SJ002",
+            "title": "Modern Web Development Stack",
+            "description": "Complete path to master modern web development technologies",
+            "status": "Active",
+            "level": "Basic to Advanced",
+            "estimatedDuration": "16 weeks",
+            "targetAudience": [
+                "Web Developers",
+                "UI/UX Engineers",
+                "Full Stack Developers"
+            ],
+            "prerequisites": [
+                "Basic HTML/CSS knowledge",
+                "Programming fundamentals"
+            ],
+            "learningObjectives": [
+                "Build responsive web applications",
+                "Master modern JavaScript frameworks",
+                "Implement full-stack solutions",
+                "Deploy and maintain web applications"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT4001",
+                    "required": true,
+                    "description": "HTML5/CSS3 fundamentals"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT4010",
+                    "required": true,
+                    "description": "JavaScript essentials"
+                },
+                {
+                    "sequence": 3,
+                    "courseCode": "TT4030",
+                    "required": true,
+                    "description": "React.js development"
+                },
+                {
+                    "sequence": 4,
+                    "courseCode": "TT4040",
+                    "required": true,
+                    "description": "Node.js backend development"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Web Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Submit capstone project",
+                    "Pass final assessment"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 9500,
+                "corporatePrice": 8500,
+                "earlyBirdDiscount": 15,
+                "groupDiscountThreshold": 4
+            },
+            "metrics": {
+                "enrolledStudents": 60,
+                "completionRate": 80,
+                "averageDuration": "18 weeks",
+                "satisfactionScore": 4.8
+            }
+        },
+        {
+            "id": "SJ003",
+            "title": "Test Automation Specialist",
+            "description": "Comprehensive path for mastering software testing automation",
+            "status": "Active",
+            "level": "Intermediate",
+            "estimatedDuration": "8 weeks",
+            "targetAudience": [
+                "QA Engineers",
+                "Test Analysts",
+                "Developers interested in testing"
+            ],
+            "prerequisites": [
+                "Basic programming knowledge",
+                "Understanding of software testing concepts"
+            ],
+            "learningObjectives": [
+                "Implement test automation frameworks",
+                "Master TDD practices",
+                "Create comprehensive test suites",
+                "Integrate automated testing in CI/CD"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT3503",
+                    "required": true,
+                    "description": "TDD and Unit Testing Essentials"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT3511",
+                    "required": true,
+                    "description": "Introduction to Test Automation"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Test Automation Specialist",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete both required courses",
+                    "Pass certification exam",
+                    "Submit automation project"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 4500,
+                "corporatePrice": 4000,
+                "earlyBirdDiscount": 10,
+                "groupDiscountThreshold": 3
+            },
+            "metrics": {
+                "enrolledStudents": 30,
+                "completionRate": 90,
+                "averageDuration": "9 weeks",
+                "satisfactionScore": 4.6
+            }
+        },
+        {
+            "id": "SJ004",
+            "title": "Cloud Native Development",
+            "description": "Master cloud-native application development and deployment",
+            "status": "Active",
+            "level": "Advanced",
+            "estimatedDuration": "14 weeks",
+            "targetAudience": [
+                "Software Engineers",
+                "DevOps Engineers",
+                "Cloud Architects"
+            ],
+            "prerequisites": [
+                "Java programming experience",
+                "Basic cloud computing knowledge"
+            ],
+            "learningObjectives": [
+                "Design cloud-native applications",
+                "Implement microservices architecture",
+                "Master containerization and orchestration",
+                "Deploy applications to cloud platforms"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT2136",
+                    "required": true,
+                    "description": "Modern Java features for cloud development"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT3335",
+                    "required": true,
+                    "description": "Advanced Spring Framework concepts"
+                },
+                {
+                    "sequence": 3,
+                    "courseCode": "TT3353",
+                    "required": true,
+                    "description": "Reactive programming principles"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Cloud Native Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Pass certification exam",
+                    "Submit cloud-native project"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 7500,
+                "corporatePrice": 6500,
+                "earlyBirdDiscount": 12,
+                "groupDiscountThreshold": 4
+            },
+            "metrics": {
+                "enrolledStudents": 25,
+                "completionRate": 88,
+                "averageDuration": "16 weeks",
+                "satisfactionScore": 4.7
+            }
+        },
+        {
+            "id": "SJ005",
+            "title": "Frontend Development Mastery",
+            "description": "Comprehensive path for modern frontend development",
+            "status": "Active",
+            "level": "Intermediate",
+            "estimatedDuration": "10 weeks",
+            "targetAudience": [
+                "Web Developers",
+                "UI Engineers",
+                "JavaScript Developers"
+            ],
+            "prerequisites": [
+                "Basic HTML/CSS knowledge",
+                "JavaScript fundamentals"
+            ],
+            "learningObjectives": [
+                "Master modern JavaScript features",
+                "Build responsive web applications",
+                "Implement state management",
+                "Create performant user interfaces"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT4020",
+                    "required": true,
+                    "description": "Advanced JavaScript concepts"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT4030",
+                    "required": true,
+                    "description": "React.js development"
+                },
+                {
+                    "sequence": 3,
+                    "courseCode": "TT4060",
+                    "required": true,
+                    "description": "TypeScript programming"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Frontend Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Build portfolio project",
+                    "Pass certification exam"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 6500,
+                "corporatePrice": 5500,
+                "earlyBirdDiscount": 15,
+                "groupDiscountThreshold": 3
+            },
+            "metrics": {
+                "enrolledStudents": 35,
+                "completionRate": 92,
+                "averageDuration": "12 weeks",
+                "satisfactionScore": 4.8
+            }
+        },
+        {
+            "id": "SJ006",
+            "title": "Full Stack JavaScript Development",
+            "description": "Complete path to master both frontend and backend JavaScript development",
+            "status": "Active",
+            "level": "Advanced",
+            "estimatedDuration": "16 weeks",
+            "targetAudience": [
+                "Web Developers",
+                "Software Engineers",
+                "Full Stack Developers"
+            ],
+            "prerequisites": [
+                "JavaScript fundamentals",
+                "Basic web development knowledge"
+            ],
+            "learningObjectives": [
+                "Build full stack JavaScript applications",
+                "Master modern frameworks and tools",
+                "Implement RESTful APIs",
+                "Deploy full stack applications"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT4020",
+                    "required": true,
+                    "description": "Advanced JavaScript concepts"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT4030",
+                    "required": true,
+                    "description": "React.js development"
+                },
+                {
+                    "sequence": 3,
+                    "courseCode": "TT4040",
+                    "required": true,
+                    "description": "Node.js backend development"
+                },
+                {
+                    "sequence": 4,
+                    "courseCode": "TT4050",
+                    "required": true,
+                    "description": "Full stack integration"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Full Stack JavaScript Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Build full stack application",
+                    "Pass certification exam"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 8500,
+                "corporatePrice": 7500,
+                "earlyBirdDiscount": 10,
+                "groupDiscountThreshold": 4
+            },
+            "metrics": {
+                "enrolledStudents": 40,
+                "completionRate": 85,
+                "averageDuration": "18 weeks",
+                "satisfactionScore": 4.6
+            }
+        },
+        {
+            "id": "SJ007",
+            "title": "DevOps Engineering",
+            "description": "Master modern DevOps practices and tools",
+            "status": "Active",
+            "level": "Advanced",
+            "estimatedDuration": "12 weeks",
+            "targetAudience": [
+                "System Administrators",
+                "Software Engineers",
+                "DevOps Engineers"
+            ],
+            "prerequisites": [
+                "Linux fundamentals",
+                "Basic scripting knowledge",
+                "Understanding of software development lifecycle"
+            ],
+            "learningObjectives": [
+                "Implement CI/CD pipelines",
+                "Master containerization",
+                "Manage cloud infrastructure",
+                "Automate deployment processes"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT3503",
+                    "required": true,
+                    "description": "Test automation fundamentals"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT3511",
+                    "required": true,
+                    "description": "Advanced test automation"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified DevOps Engineer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Implement CI/CD project",
+                    "Pass certification exam"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 7000,
+                "corporatePrice": 6000,
+                "earlyBirdDiscount": 12,
+                "groupDiscountThreshold": 3
+            },
+            "metrics": {
+                "enrolledStudents": 30,
+                "completionRate": 87,
+                "averageDuration": "14 weeks",
+                "satisfactionScore": 4.7
+            }
+        },
+        {
+            "id": "SJ008",
+            "title": "Modern Java Development",
+            "description": "Master latest Java features and modern development practices",
+            "status": "Active",
+            "level": "Intermediate",
+            "estimatedDuration": "10 weeks",
+            "targetAudience": [
+                "Java Developers",
+                "Software Engineers",
+                "Backend Developers"
+            ],
+            "prerequisites": [
+                "Basic Java knowledge",
+                "Understanding of OOP concepts"
+            ],
+            "learningObjectives": [
+                "Master Java 17 and 21 features",
+                "Implement modern Java patterns",
+                "Optimize Java applications",
+                "Use modern Java tools"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT2135",
+                    "required": true,
+                    "description": "Java 17 features"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT2136",
+                    "required": true,
+                    "description": "Java 21 features"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Modern Java Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Pass certification exam",
+                    "Submit modern Java project"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 5500,
+                "corporatePrice": 4500,
+                "earlyBirdDiscount": 10,
+                "groupDiscountThreshold": 4
+            },
+            "metrics": {
+                "enrolledStudents": 45,
+                "completionRate": 90,
+                "averageDuration": "11 weeks",
+                "satisfactionScore": 4.8
+            }
+        },
+        {
+            "id": "SJ009",
+            "title": "Web Security Specialist",
+            "description": "Master web application security and secure coding practices",
+            "status": "Active",
+            "level": "Advanced",
+            "estimatedDuration": "8 weeks",
+            "targetAudience": [
+                "Web Developers",
+                "Security Engineers",
+                "Software Architects"
+            ],
+            "prerequisites": [
+                "Web development experience",
+                "Basic security knowledge"
+            ],
+            "learningObjectives": [
+                "Implement secure coding practices",
+                "Identify security vulnerabilities",
+                "Apply security best practices",
+                "Conduct security testing"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT4020",
+                    "required": true,
+                    "description": "Advanced JavaScript security"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT3503",
+                    "required": true,
+                    "description": "Security testing fundamentals"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Web Security Specialist",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Pass security assessment",
+                    "Complete security audit project"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 6000,
+                "corporatePrice": 5000,
+                "earlyBirdDiscount": 15,
+                "groupDiscountThreshold": 3
+            },
+            "metrics": {
+                "enrolledStudents": 25,
+                "completionRate": 85,
+                "averageDuration": "9 weeks",
+                "satisfactionScore": 4.7
+            }
+        },
+        {
+            "id": "SJ010",
+            "title": "Mobile App Development",
+            "description": "Learn to build cross-platform mobile applications",
+            "status": "Active",
+            "level": "Intermediate",
+            "estimatedDuration": "12 weeks",
+            "targetAudience": [
+                "Web Developers",
+                "Mobile Developers",
+                "UI/UX Engineers"
+            ],
+            "prerequisites": [
+                "JavaScript knowledge",
+                "Web development basics"
+            ],
+            "learningObjectives": [
+                "Build cross-platform mobile apps",
+                "Implement responsive designs",
+                "Handle mobile-specific features",
+                "Deploy to app stores"
+            ],
+            "courses": [
+                {
+                    "sequence": 1,
+                    "courseCode": "TT4030",
+                    "required": true,
+                    "description": "React fundamentals"
+                },
+                {
+                    "sequence": 2,
+                    "courseCode": "TT4060",
+                    "required": true,
+                    "description": "TypeScript for mobile"
+                }
+            ],
+            "certification": {
+                "name": "TriveraTech Certified Mobile Developer",
+                "validityPeriod": "2 years",
+                "requirements": [
+                    "Complete all required courses",
+                    "Build mobile application",
+                    "Pass certification exam"
+                ]
+            },
+            "pricing": {
+                "individualPrice": 6500,
+                "corporatePrice": 5500,
+                "earlyBirdDiscount": 12,
+                "groupDiscountThreshold": 4
+            },
+            "metrics": {
+                "enrolledStudents": 35,
+                "completionRate": 88,
+                "averageDuration": "14 weeks",
+                "satisfactionScore": 4.6
+            }
+        }
+    ]
+}

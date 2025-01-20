@@ -1,0 +1,1877 @@
+[
+    {
+        "id": "act_1701234567_abc123",
+        "category": "SESSION",
+        "action": "CREATE_SESSION",
+        "doerType": "EMPLOYEE",
+        "doerId": "emp_123",
+        "doerName": "John Smith",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "courseId": "course_789",
+            "startDate": "2024-02-15",
+            "endDate": "2024-02-17",
+            "capacity": 20,
+            "isPrivate": false
+        },
+        "assignedTo": [
+            "emp_123"
+        ],
+        "notes": [
+            {
+                "text": "Session created with standard configuration",
+                "timestamp": "2024-01-10T09:00:00Z",
+                "userId": "emp_123"
+            },
+            {
+                "text": "thanks",
+                "timestamp": "2025-01-20T00:38:49.855Z",
+                "userId": "EMP001",
+                "userName": "John Smith"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-10T09:00:00Z",
+                "changedBy": "emp_123",
+                "reason": "Activity created"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-10T09:00:05Z",
+                "changedBy": "emp_123",
+                "reason": "Started session creation"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-10T09:00:10Z",
+                "changedBy": "emp_123",
+                "reason": "Session successfully created"
+            }
+        ],
+        "createdAt": "2024-01-10T09:00:00Z",
+        "updatedAt": "2025-01-20T00:38:49.855Z",
+        "completedAt": "2024-01-10T09:00:10Z"
+    },
+    {
+        "id": "act_1701234568_def456",
+        "category": "ENROLLMENT",
+        "action": "ENROLL_STUDENT",
+        "doerType": "STUDENT",
+        "doerId": "student_789",
+        "doerName": "Alice Johnson",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "paymentMethod": "CREDIT_CARD",
+            "paymentStatus": "PAID",
+            "enrollmentDate": "2024-01-10",
+            "amount": 999.99,
+            "currency": "USD"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Payment received and processed",
+                "timestamp": "2024-01-10T10:15:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Enrollment confirmation email sent",
+                "timestamp": "2024-01-10T10:15:05Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-10T10:15:00Z",
+                "changedBy": "student_789",
+                "reason": "Enrollment initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-10T10:15:05Z",
+                "changedBy": "system",
+                "reason": "Payment processed and enrollment confirmed"
+            }
+        ],
+        "createdAt": "2024-01-10T10:15:00Z",
+        "updatedAt": "2024-01-10T10:15:05Z",
+        "completedAt": "2024-01-10T10:15:05Z"
+    },
+    {
+        "id": "act_1701234569_ghi789",
+        "category": "SESSION",
+        "action": "REQUEST_PRIVATE_SESSION",
+        "doerType": "CLIENT",
+        "doerId": "client_101",
+        "doerName": "Acme Corp",
+        "targetType": "COURSE",
+        "targetId": "course_202",
+        "status": "IN_PROGRESS",
+        "currentStep": 2,
+        "totalSteps": 5,
+        "metadata": {
+            "requestedDates": [
+                "2024-03-15",
+                "2024-03-16"
+            ],
+            "expectedAttendees": 15,
+            "specialRequirements": "Custom Java modules",
+            "preferredInstructor": "instructor_303"
+        },
+        "assignedTo": [
+            "emp_123",
+            "emp_456"
+        ],
+        "notes": [
+            {
+                "text": "Initial request received from client",
+                "timestamp": "2024-01-11T11:30:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Checking instructor availability",
+                "timestamp": "2024-01-11T11:45:00Z",
+                "userId": "emp_123"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-11T11:30:00Z",
+                "changedBy": "client_101",
+                "reason": "Private session requested"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-11T11:45:00Z",
+                "changedBy": "emp_123",
+                "reason": "Request under review"
+            }
+        ],
+        "createdAt": "2024-01-11T11:30:00Z",
+        "updatedAt": "2024-01-11T11:45:00Z"
+    },
+    {
+        "id": "act_1701234570_jkl012",
+        "category": "PAYMENT",
+        "action": "PROCESS_PAYMENT",
+        "doerType": "CLIENT",
+        "doerId": "client_102",
+        "doerName": "TechStart Inc",
+        "targetType": "INVOICE",
+        "targetId": "inv_303",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "amount": 5999.99,
+            "currency": "USD",
+            "paymentMethod": "PURCHASE_ORDER",
+            "poNumber": "PO-2024-001",
+            "invoiceNumber": "INV-2024-0110"
+        },
+        "assignedTo": [
+            "emp_789"
+        ],
+        "notes": [
+            {
+                "text": "Purchase order received and validated",
+                "timestamp": "2024-01-12T13:45:00Z",
+                "userId": "emp_789"
+            },
+            {
+                "text": "Payment processed successfully",
+                "timestamp": "2024-01-12T13:50:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-12T13:45:00Z",
+                "changedBy": "client_102",
+                "reason": "Payment initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-12T13:47:00Z",
+                "changedBy": "emp_789",
+                "reason": "Processing purchase order"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-12T13:50:00Z",
+                "changedBy": "system",
+                "reason": "Payment confirmed"
+            }
+        ],
+        "createdAt": "2024-01-12T13:45:00Z",
+        "updatedAt": "2024-01-12T13:50:00Z",
+        "completedAt": "2024-01-12T13:50:00Z"
+    },
+    {
+        "id": "act_1701234571_mno345",
+        "category": "COMMISSION",
+        "action": "CALCULATE_COMMISSION",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "PARTNER",
+        "targetId": "partner_404",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "period": "2024-01",
+            "totalSales": 15000,
+            "commissionRate": 0.15,
+            "commissionAmount": 2250,
+            "calculationDetails": {
+                "regularSales": 10000,
+                "bonusSales": 5000
+            }
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Monthly commission calculation completed",
+                "timestamp": "2024-01-13T00:00:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-13T00:00:00Z",
+                "changedBy": "system",
+                "reason": "Commission calculation started"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-13T00:00:05Z",
+                "changedBy": "system",
+                "reason": "Commission calculated successfully"
+            }
+        ],
+        "createdAt": "2024-01-13T00:00:00Z",
+        "updatedAt": "2024-01-13T00:00:05Z",
+        "completedAt": "2024-01-13T00:00:05Z"
+    },
+    {
+        "id": "act_1701234572_pqr678",
+        "category": "CERTIFICATE",
+        "action": "GENERATE_CERTIFICATE",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "STUDENT",
+        "targetId": "student_505",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "courseId": "course_606",
+            "courseName": "Advanced Python Programming",
+            "completionDate": "2024-01-14",
+            "grade": "A",
+            "certificateId": "cert_789"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Certificate generated automatically upon course completion",
+                "timestamp": "2024-01-14T15:30:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-14T15:30:00Z",
+                "changedBy": "system",
+                "reason": "Certificate generation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-14T15:30:05Z",
+                "changedBy": "system",
+                "reason": "Certificate generated and sent to student"
+            }
+        ],
+        "createdAt": "2024-01-14T15:30:00Z",
+        "updatedAt": "2024-01-14T15:30:05Z",
+        "completedAt": "2024-01-14T15:30:05Z"
+    },
+    {
+        "id": "act_1701234573_stu901",
+        "category": "WAITLIST",
+        "action": "ADD_TO_WAITLIST",
+        "doerType": "STUDENT",
+        "doerId": "student_606",
+        "doerName": "Bob Wilson",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_707",
+        "status": "PENDING",
+        "currentStep": 1,
+        "totalSteps": 2,
+        "metadata": {
+            "position": 1,
+            "notificationPreference": "EMAIL",
+            "sessionStartDate": "2024-04-01",
+            "courseName": "Advanced Java Development"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Added to waitlist for full session",
+                "timestamp": "2024-01-15T09:20:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-15T09:20:00Z",
+                "changedBy": "student_606",
+                "reason": "Waitlist request submitted"
+            }
+        ],
+        "createdAt": "2024-01-15T09:20:00Z",
+        "updatedAt": "2024-01-15T09:20:00Z"
+    },
+    {
+        "id": "act_1701234574_vwx234",
+        "category": "DOCUMENT",
+        "action": "UPLOAD_DOCUMENT",
+        "doerType": "INSTRUCTOR",
+        "doerId": "instructor_808",
+        "doerName": "Dr. Sarah Chen",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_909",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "documentType": "COURSE_MATERIALS",
+            "fileName": "advanced_java_week1.pdf",
+            "fileSize": 2048576,
+            "uploadLocation": "materials/session_909/"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Course materials uploaded for Week 1",
+                "timestamp": "2024-01-16T10:45:00Z",
+                "userId": "instructor_808"
+            },
+            {
+                "text": "Document processed and indexed",
+                "timestamp": "2024-01-16T10:45:05Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-16T10:45:00Z",
+                "changedBy": "instructor_808",
+                "reason": "Document upload initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-16T10:45:02Z",
+                "changedBy": "system",
+                "reason": "Processing document"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-16T10:45:05Z",
+                "changedBy": "system",
+                "reason": "Document processed successfully"
+            }
+        ],
+        "createdAt": "2024-01-16T10:45:00Z",
+        "updatedAt": "2024-01-16T10:45:05Z",
+        "completedAt": "2024-01-16T10:45:05Z"
+    },
+    {
+        "id": "act_1701234575_yz567",
+        "category": "USER",
+        "action": "CREATE_ACCOUNT",
+        "doerType": "PARTNER",
+        "doerId": "partner_1010",
+        "doerName": "Global Training Solutions",
+        "targetType": "CLIENT",
+        "targetId": "client_1111",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "accountType": "ENTERPRISE",
+            "region": "EMEA",
+            "industry": "Finance",
+            "employeeCount": 500
+        },
+        "assignedTo": [
+            "emp_234"
+        ],
+        "notes": [
+            {
+                "text": "Enterprise client account created through partner referral",
+                "timestamp": "2024-01-17T11:15:00Z",
+                "userId": "partner_1010"
+            },
+            {
+                "text": "Account verified and activated",
+                "timestamp": "2024-01-17T11:20:00Z",
+                "userId": "emp_234"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-17T11:15:00Z",
+                "changedBy": "partner_1010",
+                "reason": "Account creation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-17T11:17:00Z",
+                "changedBy": "system",
+                "reason": "Verifying account details"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-17T11:20:00Z",
+                "changedBy": "emp_234",
+                "reason": "Account verified and activated"
+            }
+        ],
+        "createdAt": "2024-01-17T11:15:00Z",
+        "updatedAt": "2024-01-17T11:20:00Z",
+        "completedAt": "2024-01-17T11:20:00Z"
+    },
+    {
+        "id": "act_1701234576_abc890",
+        "category": "INTEGRATION",
+        "action": "SYNC_LEARNWORLDS",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_1616",
+        "status": "FAILED",
+        "currentStep": 1,
+        "totalSteps": 3,
+        "metadata": {
+            "error": "API timeout",
+            "retryCount": 3,
+            "lastAttempt": "2024-01-20T15:00:00Z",
+            "errorDetails": "Connection timeout after 30 seconds"
+        },
+        "assignedTo": [
+            "emp_567"
+        ],
+        "notes": [
+            {
+                "text": "Integration sync failed due to API timeout",
+                "timestamp": "2024-01-20T15:00:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Auto-retry attempted 3 times",
+                "timestamp": "2024-01-20T15:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-20T15:00:00Z",
+                "changedBy": "system",
+                "reason": "LearnWorlds sync initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-20T15:00:01Z",
+                "changedBy": "system",
+                "reason": "Attempting sync"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "FAILED",
+                "timestamp": "2024-01-20T15:05:00Z",
+                "changedBy": "system",
+                "reason": "Sync failed after 3 retry attempts"
+            }
+        ],
+        "createdAt": "2024-01-20T15:00:00Z",
+        "updatedAt": "2024-01-20T15:05:00Z"
+    },
+    {
+        "id": "act_1701234577_def123",
+        "category": "REFUND",
+        "action": "PROCESS_REFUND",
+        "doerType": "EMPLOYEE",
+        "doerId": "emp_345",
+        "doerName": "Mary Johnson",
+        "targetType": "ENROLLMENT",
+        "targetId": "enroll_789",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "refundAmount": 799.99,
+            "currency": "USD",
+            "reason": "Course cancellation",
+            "originalPaymentId": "pay_456",
+            "refundMethod": "CREDIT_CARD_REVERSAL"
+        },
+        "assignedTo": [
+            "emp_345"
+        ],
+        "notes": [
+            {
+                "text": "Refund request received and validated",
+                "timestamp": "2024-01-21T09:00:00Z",
+                "userId": "emp_345"
+            },
+            {
+                "text": "Refund processed successfully",
+                "timestamp": "2024-01-21T09:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-21T09:00:00Z",
+                "changedBy": "emp_345",
+                "reason": "Refund request initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-21T09:02:00Z",
+                "changedBy": "system",
+                "reason": "Processing refund"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-21T09:05:00Z",
+                "changedBy": "system",
+                "reason": "Refund completed successfully"
+            }
+        ],
+        "createdAt": "2024-01-21T09:00:00Z",
+        "updatedAt": "2024-01-21T09:05:00Z",
+        "completedAt": "2024-01-21T09:05:00Z"
+    },
+    {
+        "id": "act_1701234578_ghi456",
+        "category": "SKILL_JOURNEY",
+        "action": "CREATE_JOURNEY",
+        "doerType": "CLIENT",
+        "doerId": "client_567",
+        "doerName": "Tech Innovators Ltd",
+        "targetType": "SKILL_JOURNEY",
+        "targetId": "journey_123",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "journeyName": "Full Stack Developer Path",
+            "coursesIncluded": [
+                "course_101",
+                "course_102",
+                "course_103"
+            ],
+            "duration": "6 months",
+            "participantCount": 10,
+            "customization": "Industry-specific projects"
+        },
+        "assignedTo": [
+            "emp_678"
+        ],
+        "notes": [
+            {
+                "text": "Custom skill journey created for client team",
+                "timestamp": "2024-01-22T10:30:00Z",
+                "userId": "emp_678"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-22T10:30:00Z",
+                "changedBy": "client_567",
+                "reason": "Skill journey creation requested"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-22T10:35:00Z",
+                "changedBy": "emp_678",
+                "reason": "Skill journey created and approved"
+            }
+        ],
+        "createdAt": "2024-01-22T10:30:00Z",
+        "updatedAt": "2024-01-22T10:35:00Z",
+        "completedAt": "2024-01-22T10:35:00Z"
+    },
+    {
+        "id": "act_1701234579_jkl789",
+        "category": "ENROLLMENT",
+        "action": "TRANSFER_ENROLLMENT",
+        "doerType": "STUDENT",
+        "doerId": "student_890",
+        "doerName": "David Lee",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "originalSessionId": "session_123",
+            "newSessionId": "session_456",
+            "transferReason": "Schedule conflict",
+            "originalStartDate": "2024-02-15",
+            "newStartDate": "2024-03-15"
+        },
+        "assignedTo": [
+            "emp_901"
+        ],
+        "notes": [
+            {
+                "text": "Transfer request received",
+                "timestamp": "2024-01-23T11:00:00Z",
+                "userId": "emp_901"
+            },
+            {
+                "text": "Transfer processed and confirmed",
+                "timestamp": "2024-01-23T11:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-23T11:00:00Z",
+                "changedBy": "student_890",
+                "reason": "Transfer requested"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-23T11:05:00Z",
+                "changedBy": "emp_901",
+                "reason": "Transfer completed"
+            }
+        ],
+        "createdAt": "2024-01-23T11:00:00Z",
+        "updatedAt": "2024-01-23T11:05:00Z",
+        "completedAt": "2024-01-23T11:05:00Z"
+    },
+    {
+        "id": "act_1701234580_mno012",
+        "category": "SESSION",
+        "action": "MODIFY_SESSION",
+        "doerType": "INSTRUCTOR",
+        "doerId": "instructor_234",
+        "doerName": "Prof. Michael Brown",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_567",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "modificationType": "SCHEDULE_CHANGE",
+            "originalDate": "2024-02-20",
+            "newDate": "2024-02-22",
+            "reason": "Instructor availability",
+            "affectedStudents": 12
+        },
+        "assignedTo": [
+            "emp_345"
+        ],
+        "notes": [
+            {
+                "text": "Schedule change requested by instructor",
+                "timestamp": "2024-01-24T13:15:00Z",
+                "userId": "instructor_234"
+            },
+            {
+                "text": "All affected students notified",
+                "timestamp": "2024-01-24T13:20:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-24T13:15:00Z",
+                "changedBy": "instructor_234",
+                "reason": "Session modification requested"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-24T13:20:00Z",
+                "changedBy": "emp_345",
+                "reason": "Modification approved and processed"
+            }
+        ],
+        "createdAt": "2024-01-24T13:15:00Z",
+        "updatedAt": "2024-01-24T13:20:00Z",
+        "completedAt": "2024-01-24T13:20:00Z"
+    },
+    {
+        "id": "act_1701234581_pqr345",
+        "category": "COMMISSION",
+        "action": "PROCESS_COMMISSION",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "PARTNER",
+        "targetId": "partner_678",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "period": "2024-01",
+            "commissionAmount": 3500,
+            "currency": "USD",
+            "enrollmentCount": 7,
+            "paymentMethod": "BANK_TRANSFER",
+            "bankReference": "COM-2024-01-678"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Monthly commission calculation completed",
+                "timestamp": "2024-01-25T00:00:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Commission payment processed",
+                "timestamp": "2024-01-25T00:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-25T00:00:00Z",
+                "changedBy": "system",
+                "reason": "Commission processing initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-25T00:02:00Z",
+                "changedBy": "system",
+                "reason": "Processing payment"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-25T00:05:00Z",
+                "changedBy": "system",
+                "reason": "Commission paid successfully"
+            }
+        ],
+        "createdAt": "2024-01-25T00:00:00Z",
+        "updatedAt": "2024-01-25T00:05:00Z",
+        "completedAt": "2024-01-25T00:05:00Z"
+    },
+    {
+        "id": "act_1701234582_stu678",
+        "category": "DOCUMENT",
+        "action": "UPDATE_COURSE_MATERIAL",
+        "doerType": "INSTRUCTOR",
+        "doerId": "instructor_789",
+        "doerName": "Dr. Emily White",
+        "targetType": "COURSE",
+        "targetId": "course_890",
+        "status": "IN_PROGRESS",
+        "currentStep": 2,
+        "totalSteps": 4,
+        "metadata": {
+            "materialType": "LAB_EXERCISES",
+            "version": "2.1.0",
+            "changes": [
+                "Updated cloud deployment steps",
+                "Added Kubernetes examples"
+            ],
+            "reviewRequired": true
+        },
+        "assignedTo": [
+            "emp_456",
+            "instructor_789"
+        ],
+        "notes": [
+            {
+                "text": "Material updates submitted for review",
+                "timestamp": "2024-01-26T14:30:00Z",
+                "userId": "instructor_789"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-26T14:30:00Z",
+                "changedBy": "instructor_789",
+                "reason": "Course material update initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-26T14:35:00Z",
+                "changedBy": "emp_456",
+                "reason": "Review process started"
+            }
+        ],
+        "createdAt": "2024-01-26T14:30:00Z",
+        "updatedAt": "2024-01-26T14:35:00Z"
+    },
+    {
+        "id": "act_1701234583_vwx901",
+        "category": "INTEGRATION",
+        "action": "SYNC_ZOHO_CRM",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "CLIENT",
+        "targetId": "client_012",
+        "status": "FAILED",
+        "currentStep": 1,
+        "totalSteps": 3,
+        "metadata": {
+            "operation": "UPDATE_CONTACT",
+            "error": "Invalid field mapping",
+            "retryCount": 2,
+            "errorDetails": "Field 'custom_training_history' not found in Zoho CRM"
+        },
+        "assignedTo": [
+            "emp_567"
+        ],
+        "notes": [
+            {
+                "text": "Sync failed due to field mapping error",
+                "timestamp": "2024-01-27T15:45:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-27T15:45:00Z",
+                "changedBy": "system",
+                "reason": "Zoho CRM sync initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "FAILED",
+                "timestamp": "2024-01-27T15:46:00Z",
+                "changedBy": "system",
+                "reason": "Sync failed - field mapping error"
+            }
+        ],
+        "createdAt": "2024-01-27T15:45:00Z",
+        "updatedAt": "2024-01-27T15:46:00Z"
+    },
+    {
+        "id": "act_1701234584_yz234",
+        "category": "PROFILE",
+        "action": "UPDATE_PREFERENCES",
+        "doerType": "STUDENT",
+        "doerId": "student_345",
+        "doerName": "Jennifer Chen",
+        "targetType": "STUDENT",
+        "targetId": "student_345",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "updatedFields": {
+                "notificationPreferences": {
+                    "email": true,
+                    "sms": false
+                },
+                "timeZone": "America/New_York",
+                "preferredLanguage": "en-US"
+            }
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Profile preferences updated",
+                "timestamp": "2024-01-28T16:20:00Z",
+                "userId": "student_345"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-28T16:20:00Z",
+                "changedBy": "student_345",
+                "reason": "Preference update initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-28T16:21:00Z",
+                "changedBy": "system",
+                "reason": "Preferences updated successfully"
+            }
+        ],
+        "createdAt": "2024-01-28T16:20:00Z",
+        "updatedAt": "2024-01-28T16:21:00Z",
+        "completedAt": "2024-01-28T16:21:00Z"
+    },
+    {
+        "id": "act_1701234585_abc567",
+        "category": "SESSION",
+        "action": "CANCEL_SESSION",
+        "doerType": "EMPLOYEE",
+        "doerId": "emp_678",
+        "doerName": "Robert Taylor",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_123",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "cancellationReason": "Insufficient enrollment",
+            "enrolledStudents": 3,
+            "minimumRequired": 5,
+            "refundsProcessed": true,
+            "alternateSessionsOffered": [
+                "session_124",
+                "session_125"
+            ]
+        },
+        "assignedTo": [
+            "emp_678"
+        ],
+        "notes": [
+            {
+                "text": "Session cancelled due to low enrollment",
+                "timestamp": "2024-01-29T09:30:00Z",
+                "userId": "emp_678"
+            },
+            {
+                "text": "All students notified and refunds initiated",
+                "timestamp": "2024-01-29T09:35:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-29T09:30:00Z",
+                "changedBy": "emp_678",
+                "reason": "Session cancellation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-29T09:32:00Z",
+                "changedBy": "system",
+                "reason": "Processing cancellation"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-29T09:35:00Z",
+                "changedBy": "system",
+                "reason": "Cancellation completed"
+            }
+        ],
+        "createdAt": "2024-01-29T09:30:00Z",
+        "updatedAt": "2024-01-29T09:35:00Z",
+        "completedAt": "2024-01-29T09:35:00Z"
+    },
+    {
+        "id": "act_1701234586_def890",
+        "category": "WAITLIST",
+        "action": "PROCESS_WAITLIST",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "openedSpots": 2,
+            "waitlistedStudents": [
+                "student_567",
+                "student_568"
+            ],
+            "notificationsSent": 2,
+            "responseDeadline": "2024-01-30T23:59:59Z"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Waitlist processing triggered by cancellation",
+                "timestamp": "2024-01-29T10:00:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Notifications sent to waitlisted students",
+                "timestamp": "2024-01-29T10:01:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-29T10:00:00Z",
+                "changedBy": "system",
+                "reason": "Waitlist processing initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-29T10:00:30Z",
+                "changedBy": "system",
+                "reason": "Sending notifications"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-29T10:01:00Z",
+                "changedBy": "system",
+                "reason": "Waitlist processed successfully"
+            }
+        ],
+        "createdAt": "2024-01-29T10:00:00Z",
+        "updatedAt": "2024-01-29T10:01:00Z",
+        "completedAt": "2024-01-29T10:01:00Z"
+    },
+    {
+        "id": "act_1701234587_ghi123",
+        "category": "PAYMENT",
+        "action": "PROCESS_BULK_PAYMENT",
+        "doerType": "CLIENT",
+        "doerId": "client_789",
+        "doerName": "Global Corp",
+        "targetType": "INVOICE",
+        "targetId": "inv_batch_001",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "totalAmount": 15000,
+            "currency": "USD",
+            "paymentMethod": "WIRE_TRANSFER",
+            "invoiceCount": 3,
+            "invoiceIds": [
+                "inv_901",
+                "inv_902",
+                "inv_903"
+            ],
+            "paymentReference": "GC-2024-001"
+        },
+        "assignedTo": [
+            "emp_890"
+        ],
+        "notes": [
+            {
+                "text": "Bulk payment received for multiple invoices",
+                "timestamp": "2024-01-30T11:15:00Z",
+                "userId": "emp_890"
+            },
+            {
+                "text": "Payment allocated to individual invoices",
+                "timestamp": "2024-01-30T11:20:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-30T11:15:00Z",
+                "changedBy": "emp_890",
+                "reason": "Bulk payment processing initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-30T11:17:00Z",
+                "changedBy": "system",
+                "reason": "Allocating payment"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-30T11:20:00Z",
+                "changedBy": "system",
+                "reason": "Payment processed and allocated"
+            }
+        ],
+        "createdAt": "2024-01-30T11:15:00Z",
+        "updatedAt": "2024-01-30T11:20:00Z",
+        "completedAt": "2024-01-30T11:20:00Z"
+    },
+    {
+        "id": "act_1701234588_jkl456",
+        "category": "CERTIFICATE",
+        "action": "BULK_CERTIFICATE_GENERATION",
+        "doerType": "EMPLOYEE",
+        "doerId": "emp_012",
+        "doerName": "Lisa Anderson",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_789",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "certificateCount": 15,
+            "courseId": "course_345",
+            "courseName": "Cloud Architecture Fundamentals",
+            "completionDate": "2024-01-30",
+            "templateId": "cert_template_001"
+        },
+        "assignedTo": [
+            "emp_012"
+        ],
+        "notes": [
+            {
+                "text": "Bulk certificate generation initiated for completed session",
+                "timestamp": "2024-01-31T13:45:00Z",
+                "userId": "emp_012"
+            },
+            {
+                "text": "All certificates generated and distributed",
+                "timestamp": "2024-01-31T13:50:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-31T13:45:00Z",
+                "changedBy": "emp_012",
+                "reason": "Bulk certificate generation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-31T13:47:00Z",
+                "changedBy": "system",
+                "reason": "Generating certificates"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-31T13:50:00Z",
+                "changedBy": "system",
+                "reason": "All certificates generated and sent"
+            }
+        ],
+        "createdAt": "2024-01-31T13:45:00Z",
+        "updatedAt": "2024-01-31T13:50:00Z",
+        "completedAt": "2024-01-31T13:50:00Z"
+    },
+    {
+        "id": "act_1701234589_mno789",
+        "category": "USER",
+        "action": "BULK_USER_IMPORT",
+        "doerType": "CLIENT",
+        "doerId": "client_234",
+        "doerName": "TechCorp Solutions",
+        "targetType": "STUDENT",
+        "targetId": "bulk_import_001",
+        "status": "IN_PROGRESS",
+        "currentStep": 2,
+        "totalSteps": 4,
+        "metadata": {
+            "totalUsers": 25,
+            "processedUsers": 10,
+            "importSource": "CSV",
+            "department": "Engineering",
+            "autoEnroll": true,
+            "targetCourseId": "course_567"
+        },
+        "assignedTo": [
+            "emp_345"
+        ],
+        "notes": [
+            {
+                "text": "Bulk user import started for new engineering team",
+                "timestamp": "2024-02-01T14:30:00Z",
+                "userId": "emp_345"
+            },
+            {
+                "text": "Processing user records",
+                "timestamp": "2024-02-01T14:35:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-02-01T14:30:00Z",
+                "changedBy": "emp_345",
+                "reason": "Bulk import initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-02-01T14:35:00Z",
+                "changedBy": "system",
+                "reason": "Processing import"
+            }
+        ],
+        "createdAt": "2024-02-01T14:30:00Z",
+        "updatedAt": "2024-02-01T14:35:00Z"
+    },
+    {
+        "id": "act_1701234590_pqr012",
+        "category": "DOCUMENT",
+        "action": "GENERATE_COURSE_CATALOG",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "PARTNER",
+        "targetId": "partner_456",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "catalogType": "CUSTOM",
+            "format": "PDF",
+            "includedCourses": 45,
+            "partnerSpecificPricing": true,
+            "validUntil": "2024-12-31"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Custom course catalog generation initiated",
+                "timestamp": "2024-02-02T15:00:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Catalog generated with partner-specific pricing",
+                "timestamp": "2024-02-02T15:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-02-02T15:00:00Z",
+                "changedBy": "system",
+                "reason": "Catalog generation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-02-02T15:02:00Z",
+                "changedBy": "system",
+                "reason": "Generating catalog"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-02-02T15:05:00Z",
+                "changedBy": "system",
+                "reason": "Catalog generated successfully"
+            }
+        ],
+        "createdAt": "2024-02-02T15:00:00Z",
+        "updatedAt": "2024-02-02T15:05:00Z",
+        "completedAt": "2024-02-02T15:05:00Z"
+    },
+    {
+        "id": "act_1701234567_abc123",
+        "category": "SESSION",
+        "action": "CREATE_SESSION",
+        "doerType": "EMPLOYEE",
+        "doerId": "emp_123",
+        "doerName": "John Smith",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "courseId": "course_789",
+            "startDate": "2024-02-15",
+            "endDate": "2024-02-17",
+            "capacity": 20,
+            "isPrivate": false
+        },
+        "assignedTo": [
+            "emp_123"
+        ],
+        "notes": [
+            {
+                "text": "Session created with standard configuration",
+                "timestamp": "2024-01-10T09:00:00Z",
+                "userId": "emp_123"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-10T09:00:00Z",
+                "changedBy": "emp_123",
+                "reason": "Activity created"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-10T09:00:05Z",
+                "changedBy": "emp_123",
+                "reason": "Started session creation"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-10T09:00:10Z",
+                "changedBy": "emp_123",
+                "reason": "Session successfully created"
+            }
+        ],
+        "createdAt": "2024-01-10T09:00:00Z",
+        "updatedAt": "2024-01-10T09:00:10Z",
+        "completedAt": "2024-01-10T09:00:10Z"
+    },
+    {
+        "id": "act_1701234568_def456",
+        "category": "ENROLLMENT",
+        "action": "ENROLL_STUDENT",
+        "doerType": "STUDENT",
+        "doerId": "student_789",
+        "doerName": "Alice Johnson",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_456",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "paymentMethod": "CREDIT_CARD",
+            "paymentStatus": "PAID",
+            "enrollmentDate": "2024-01-10",
+            "amount": 999.99,
+            "currency": "USD"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Payment received and processed",
+                "timestamp": "2024-01-10T10:15:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Enrollment confirmation email sent",
+                "timestamp": "2024-01-10T10:15:05Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-10T10:15:00Z",
+                "changedBy": "student_789",
+                "reason": "Enrollment initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-10T10:15:05Z",
+                "changedBy": "system",
+                "reason": "Payment processed and enrollment confirmed"
+            }
+        ],
+        "createdAt": "2024-01-10T10:15:00Z",
+        "updatedAt": "2024-01-10T10:15:05Z",
+        "completedAt": "2024-01-10T10:15:05Z"
+    },
+    {
+        "id": "act_1701234569_ghi789",
+        "category": "SESSION",
+        "action": "REQUEST_PRIVATE_SESSION",
+        "doerType": "CLIENT",
+        "doerId": "client_101",
+        "doerName": "Acme Corp",
+        "targetType": "COURSE",
+        "targetId": "course_202",
+        "status": "IN_PROGRESS",
+        "currentStep": 2,
+        "totalSteps": 5,
+        "metadata": {
+            "requestedDates": [
+                "2024-03-15",
+                "2024-03-16"
+            ],
+            "expectedAttendees": 15,
+            "specialRequirements": "Custom Java modules",
+            "preferredInstructor": "instructor_303"
+        },
+        "assignedTo": [
+            "emp_123",
+            "emp_456"
+        ],
+        "notes": [
+            {
+                "text": "Initial request received from client",
+                "timestamp": "2024-01-11T11:30:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Checking instructor availability",
+                "timestamp": "2024-01-11T11:45:00Z",
+                "userId": "emp_123"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-11T11:30:00Z",
+                "changedBy": "client_101",
+                "reason": "Private session requested"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-11T11:45:00Z",
+                "changedBy": "emp_123",
+                "reason": "Request under review"
+            }
+        ],
+        "createdAt": "2024-01-11T11:30:00Z",
+        "updatedAt": "2024-01-11T11:45:00Z"
+    },
+    {
+        "id": "act_1701234570_jkl012",
+        "category": "PAYMENT",
+        "action": "PROCESS_PAYMENT",
+        "doerType": "CLIENT",
+        "doerId": "client_102",
+        "doerName": "TechStart Inc",
+        "targetType": "INVOICE",
+        "targetId": "inv_303",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "amount": 5999.99,
+            "currency": "USD",
+            "paymentMethod": "PURCHASE_ORDER",
+            "poNumber": "PO-2024-001",
+            "invoiceNumber": "INV-2024-0110"
+        },
+        "assignedTo": [
+            "emp_789"
+        ],
+        "notes": [
+            {
+                "text": "Purchase order received and validated",
+                "timestamp": "2024-01-12T13:45:00Z",
+                "userId": "emp_789"
+            },
+            {
+                "text": "Payment processed successfully",
+                "timestamp": "2024-01-12T13:50:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-12T13:45:00Z",
+                "changedBy": "client_102",
+                "reason": "Payment initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-12T13:47:00Z",
+                "changedBy": "emp_789",
+                "reason": "Processing purchase order"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-12T13:50:00Z",
+                "changedBy": "system",
+                "reason": "Payment confirmed"
+            }
+        ],
+        "createdAt": "2024-01-12T13:45:00Z",
+        "updatedAt": "2024-01-12T13:50:00Z",
+        "completedAt": "2024-01-12T13:50:00Z"
+    },
+    {
+        "id": "act_1701234571_mno345",
+        "category": "COMMISSION",
+        "action": "CALCULATE_COMMISSION",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "PARTNER",
+        "targetId": "partner_404",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "period": "2024-01",
+            "totalSales": 15000,
+            "commissionRate": 0.15,
+            "commissionAmount": 2250,
+            "calculationDetails": {
+                "regularSales": 10000,
+                "bonusSales": 5000
+            }
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Monthly commission calculation completed",
+                "timestamp": "2024-01-13T00:00:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-13T00:00:00Z",
+                "changedBy": "system",
+                "reason": "Commission calculation started"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-13T00:00:05Z",
+                "changedBy": "system",
+                "reason": "Commission calculated successfully"
+            }
+        ],
+        "createdAt": "2024-01-13T00:00:00Z",
+        "updatedAt": "2024-01-13T00:00:05Z",
+        "completedAt": "2024-01-13T00:00:05Z"
+    },
+    {
+        "id": "act_1701234572_pqr678",
+        "category": "CERTIFICATE",
+        "action": "GENERATE_CERTIFICATE",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "STUDENT",
+        "targetId": "student_505",
+        "status": "COMPLETED",
+        "currentStep": 2,
+        "totalSteps": 2,
+        "metadata": {
+            "courseId": "course_606",
+            "courseName": "Advanced Python Programming",
+            "completionDate": "2024-01-14",
+            "grade": "A",
+            "certificateId": "cert_789"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Certificate generated automatically upon course completion",
+                "timestamp": "2024-01-14T15:30:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-14T15:30:00Z",
+                "changedBy": "system",
+                "reason": "Certificate generation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-14T15:30:05Z",
+                "changedBy": "system",
+                "reason": "Certificate generated and sent to student"
+            }
+        ],
+        "createdAt": "2024-01-14T15:30:00Z",
+        "updatedAt": "2024-01-14T15:30:05Z",
+        "completedAt": "2024-01-14T15:30:05Z"
+    },
+    {
+        "id": "act_1701234573_stu901",
+        "category": "WAITLIST",
+        "action": "ADD_TO_WAITLIST",
+        "doerType": "STUDENT",
+        "doerId": "student_606",
+        "doerName": "Bob Wilson",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_707",
+        "status": "PENDING",
+        "currentStep": 1,
+        "totalSteps": 2,
+        "metadata": {
+            "position": 1,
+            "notificationPreference": "EMAIL",
+            "sessionStartDate": "2024-04-01",
+            "courseName": "Advanced Java Development"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Added to waitlist for full session",
+                "timestamp": "2024-01-15T09:20:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-15T09:20:00Z",
+                "changedBy": "student_606",
+                "reason": "Waitlist request submitted"
+            }
+        ],
+        "createdAt": "2024-01-15T09:20:00Z",
+        "updatedAt": "2024-01-15T09:20:00Z"
+    },
+    {
+        "id": "act_1701234574_vwx234",
+        "category": "DOCUMENT",
+        "action": "UPLOAD_DOCUMENT",
+        "doerType": "INSTRUCTOR",
+        "doerId": "instructor_808",
+        "doerName": "Dr. Sarah Chen",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_909",
+        "status": "COMPLETED",
+        "currentStep": 3,
+        "totalSteps": 3,
+        "metadata": {
+            "documentType": "COURSE_MATERIALS",
+            "fileName": "advanced_java_week1.pdf",
+            "fileSize": 2048576,
+            "uploadLocation": "materials/session_909/"
+        },
+        "assignedTo": [],
+        "notes": [
+            {
+                "text": "Course materials uploaded for Week 1",
+                "timestamp": "2024-01-16T10:45:00Z",
+                "userId": "instructor_808"
+            },
+            {
+                "text": "Document processed and indexed",
+                "timestamp": "2024-01-16T10:45:05Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-16T10:45:00Z",
+                "changedBy": "instructor_808",
+                "reason": "Document upload initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-16T10:45:02Z",
+                "changedBy": "system",
+                "reason": "Processing document"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-16T10:45:05Z",
+                "changedBy": "system",
+                "reason": "Document processed successfully"
+            }
+        ],
+        "createdAt": "2024-01-16T10:45:00Z",
+        "updatedAt": "2024-01-16T10:45:05Z",
+        "completedAt": "2024-01-16T10:45:05Z"
+    },
+    {
+        "id": "act_1701234575_yz567",
+        "category": "USER",
+        "action": "CREATE_ACCOUNT",
+        "doerType": "PARTNER",
+        "doerId": "partner_1010",
+        "doerName": "Global Training Solutions",
+        "targetType": "CLIENT",
+        "targetId": "client_1111",
+        "status": "COMPLETED",
+        "currentStep": 4,
+        "totalSteps": 4,
+        "metadata": {
+            "accountType": "ENTERPRISE",
+            "region": "EMEA",
+            "industry": "Finance",
+            "employeeCount": 500
+        },
+        "assignedTo": [
+            "emp_234"
+        ],
+        "notes": [
+            {
+                "text": "Enterprise client account created through partner referral",
+                "timestamp": "2024-01-17T11:15:00Z",
+                "userId": "partner_1010"
+            },
+            {
+                "text": "Account verified and activated",
+                "timestamp": "2024-01-17T11:20:00Z",
+                "userId": "emp_234"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-17T11:15:00Z",
+                "changedBy": "partner_1010",
+                "reason": "Account creation initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-17T11:17:00Z",
+                "changedBy": "system",
+                "reason": "Verifying account details"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2024-01-17T11:20:00Z",
+                "changedBy": "emp_234",
+                "reason": "Account verified and activated"
+            }
+        ],
+        "createdAt": "2024-01-17T11:15:00Z",
+        "updatedAt": "2024-01-17T11:20:00Z",
+        "completedAt": "2024-01-17T11:20:00Z"
+    },
+    {
+        "id": "act_1701234576_abc890",
+        "category": "INTEGRATION",
+        "action": "SYNC_LEARNWORLDS",
+        "doerType": "SYSTEM",
+        "doerId": "system",
+        "doerName": "System",
+        "targetType": "COURSE_SESSION",
+        "targetId": "session_1616",
+        "status": "FAILED",
+        "currentStep": 1,
+        "totalSteps": 3,
+        "metadata": {
+            "error": "API timeout",
+            "retryCount": 3,
+            "lastAttempt": "2024-01-20T15:00:00Z",
+            "errorDetails": "Connection timeout after 30 seconds"
+        },
+        "assignedTo": [
+            "emp_567"
+        ],
+        "notes": [
+            {
+                "text": "Integration sync failed due to API timeout",
+                "timestamp": "2024-01-20T15:00:00Z",
+                "userId": "system"
+            },
+            {
+                "text": "Auto-retry attempted 3 times",
+                "timestamp": "2024-01-20T15:05:00Z",
+                "userId": "system"
+            }
+        ],
+        "statusHistory": [
+            {
+                "from": null,
+                "to": "PENDING",
+                "timestamp": "2024-01-20T15:00:00Z",
+                "changedBy": "system",
+                "reason": "LearnWorlds sync initiated"
+            },
+            {
+                "from": "PENDING",
+                "to": "IN_PROGRESS",
+                "timestamp": "2024-01-20T15:00:01Z",
+                "changedBy": "system",
+                "reason": "Attempting sync"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "FAILED",
+                "timestamp": "2024-01-20T15:05:00Z",
+                "changedBy": "system",
+                "reason": "Sync failed after 3 retry attempts"
+            }
+        ],
+        "createdAt": "2024-01-20T15:00:00Z",
+        "updatedAt": "2024-01-20T15:05:00Z"
+    }
+]

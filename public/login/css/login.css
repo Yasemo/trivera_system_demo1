@@ -1,0 +1,133 @@
+/* Login container styles */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.login-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portal tabs */
+.portal-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-color);
+}
+
+.tab-btn:hover {
+    background-color: var(--background-color);
+}
+
+.tab-btn.active {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+.tab-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.tab-btn span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Login forms */
+.login-forms {
+    position: relative;
+}
+
+.login-form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.login-form.active {
+    display: block;
+    opacity: 1;
+}
+
+.login-form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Animation for form switching */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form.active {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 1.5rem;
+    }
+
+    .portal-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tab-btn {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .tab-logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0;
+    }
+
+    .login-form h1 {
+        font-size: 1.5rem;
+    }
+}
