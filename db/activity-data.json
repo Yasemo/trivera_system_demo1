@@ -122,7 +122,7 @@
         "doerName": "Acme Corp",
         "targetType": "COURSE",
         "targetId": "course_202",
-        "status": "IN_PROGRESS",
+        "status": "COMPLETED",
         "currentStep": 2,
         "totalSteps": 5,
         "metadata": {
@@ -148,6 +148,12 @@
                 "text": "Checking instructor availability",
                 "timestamp": "2024-01-11T11:45:00Z",
                 "userId": "emp_123"
+            },
+            {
+                "text": "Status changed from IN_PROGRESS to COMPLETED: approved",
+                "timestamp": "2025-01-20T04:45:54.978Z",
+                "userId": "EMP001",
+                "userName": "John Smith"
             }
         ],
         "statusHistory": [
@@ -164,10 +170,17 @@
                 "timestamp": "2024-01-11T11:45:00Z",
                 "changedBy": "emp_123",
                 "reason": "Request under review"
+            },
+            {
+                "from": "IN_PROGRESS",
+                "to": "COMPLETED",
+                "timestamp": "2025-01-20T04:45:54.978Z",
+                "changedBy": "EMP001",
+                "reason": "approved"
             }
         ],
         "createdAt": "2024-01-11T11:30:00Z",
-        "updatedAt": "2024-01-11T11:45:00Z"
+        "updatedAt": "2025-01-20T04:45:54.978Z"
     },
     {
         "id": "act_1701234570_jkl012",

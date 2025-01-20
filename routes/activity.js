@@ -3,6 +3,9 @@ const router = express.Router();
 const fs = require('fs').promises;
 const path = require('path');
 
+// Valid status values
+const VALID_STATUSES = ['PENDING', 'IN_PROGRESS', 'COMPLETED', 'FAILED'];
+
 // Helper function to read activity data
 async function readActivityData() {
     try {
@@ -141,6 +144,67 @@ router.post('/:type/:activityId/notes', async (req, res) => {
     } catch (error) {
         console.error('Error adding note:', error);
         res.status(500).json({ error: 'Failed to add note' });
+    }
+});
+
+// Update activity status
+router.put('/:type/:activityId/status', async (req, res) => {
+    try {
+        const { activityId } = req.params;
+        const { status, reason, userId, userName } = req.body;
+
+        if (!status || !userId) {
+            return res.status(400).json({ error: 'Status and userId are required' });
+        }
+
+        if (!VALID_STATUSES.includes(status)) {
+            return res.status(400).json({ 
+                error: `Invalid status. Must be one of: ${VALID_STATUSES.join(', ')}` 
+            });
+        }
+
+        const activities = await readActivityData();
+        const filePath = path.join(__dirname, '..', 'db', 'activity-data.json');
+
+        // Find the activity
+        const activity = activities.find(a => a.id === activityId);
+        if (!activity) {
+            return res.status(404).json({ error: 'Activity not found' });
+        }
+
+        // Create status history entry
+        const historyEntry = {
+            from: activity.status,
+            to: status,
+            timestamp: new Date().toISOString(),
+            changedBy: userId,
+            reason: reason || `Status changed to ${status}`
+        };
+
+        // Update activity
+        activity.status = status;
+        activity.statusHistory.push(historyEntry);
+        activity.updatedAt = new Date().toISOString();
+
+        // Add note about status change
+        activity.notes.push({
+            text: `Status changed from ${historyEntry.from} to ${status}${reason ? ': ' + reason : ''}`,
+            timestamp: new Date().toISOString(),
+            userId,
+            userName: userName || 'Unknown User'
+        });
+
+        // Write back to file
+        await fs.writeFile(filePath, JSON.stringify(activities, null, 4));
+
+        res.json({ 
+            success: true, 
+            activity,
+            statusHistory: historyEntry 
+        });
+    } catch (error) {
+        console.error('Error updating status:', error);
+        res.status(500).json({ error: 'Failed to update status' });
     }
 });
 

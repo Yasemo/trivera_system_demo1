@@ -363,6 +363,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 margin-top: 1rem;
             }
 
+            .status-change-section {
+                margin-top: 0.5rem;
+            }
+
+            .status-select {
+                padding: 0.5rem;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+                width: 200px;
+                font-size: 0.9rem;
+                background-color: white;
+            }
+
+            .status-reason-section {
+                margin-top: 1rem;
+            }
+
+            .status-reason-input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+                resize: vertical;
+                min-height: 60px;
+                font-family: inherit;
+            }
+
             .status-history-item {
                 display: flex;
                 justify-content: space-between;
@@ -528,7 +556,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="activity-detail-item">
                             <span class="activity-detail-label">Status</span>
-                            <span class="status-badge ${activity.status.toLowerCase()}">${activity.status}</span>
+                            <div class="status-change-section">
+                                <select id="status-select" class="status-select">
+                                    <option value="PENDING" ${activity.status === 'PENDING' ? 'selected' : ''}>Pending</option>
+                                    <option value="IN_PROGRESS" ${activity.status === 'IN_PROGRESS' ? 'selected' : ''}>In Progress</option>
+                                    <option value="COMPLETED" ${activity.status === 'COMPLETED' ? 'selected' : ''}>Completed</option>
+                                    <option value="FAILED" ${activity.status === 'FAILED' ? 'selected' : ''}>Failed</option>
+                                </select>
+                                <div class="status-reason-section" style="display: none;">
+                                    <textarea id="status-reason" placeholder="Enter reason for status change..." class="status-reason-input"></textarea>
+                                    <button class="btn btn-primary" id="update-status-btn">Update Status</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="activity-detail-item">
                             <span class="activity-detail-label">Progress</span>
@@ -596,6 +635,55 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.querySelector('.activity-modal-close').addEventListener('click', closeModal);
         modal.addEventListener('click', e => {
             if (e.target === modal) closeModal();
+        });
+
+        // Handle status change
+        const statusSelect = modal.querySelector('#status-select');
+        const statusReasonSection = modal.querySelector('.status-reason-section');
+        const statusReasonInput = modal.querySelector('#status-reason');
+        const updateStatusBtn = modal.querySelector('#update-status-btn');
+
+        statusSelect.addEventListener('change', () => {
+            const newStatus = statusSelect.value;
+            if (newStatus !== activity.status) {
+                statusReasonSection.style.display = 'block';
+            } else {
+                statusReasonSection.style.display = 'none';
+            }
+        });
+
+        updateStatusBtn.addEventListener('click', async () => {
+            const newStatus = statusSelect.value;
+            const reason = statusReasonInput.value.trim();
+
+            if (!reason) {
+                alert('Please provide a reason for the status change');
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/backoffice/activity/${currentDoerType}/${activity.id}/status`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        status: newStatus,
+                        reason: reason,
+                        userId: userInfo.id,
+                        userName: `${userInfo.firstName} ${userInfo.lastName}`
+                    })
+                });
+
+                if (!response.ok) throw new Error('Failed to update status');
+
+                // Refresh activity data and close modal
+                await fetchActivityData();
+                closeModal();
+            } catch (error) {
+                console.error('Error updating status:', error);
+                alert('Failed to update status. Please try again.');
+            }
         });
 
         // Handle add note

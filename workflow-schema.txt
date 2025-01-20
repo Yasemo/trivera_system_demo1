@@ -1,0 +1,262 @@
+// Workflow Definitions
+const WorkflowType = {
+  // Session-related workflows
+  CREATE_PUBLIC_SESSION: 'CREATE_PUBLIC_SESSION',
+  CREATE_PRIVATE_SESSION: 'CREATE_PRIVATE_SESSION',
+  MODIFY_SESSION: 'MODIFY_SESSION',
+  CANCEL_SESSION: 'CANCEL_SESSION',
+  
+  // Enrollment workflows
+  STUDENT_ENROLLMENT: 'STUDENT_ENROLLMENT',
+  BULK_ENROLLMENT: 'BULK_ENROLLMENT',
+  ENROLLMENT_TRANSFER: 'ENROLLMENT_TRANSFER',
+  
+  // Payment workflows
+  PROCESS_CREDIT_CARD: 'PROCESS_CREDIT_CARD',
+  PROCESS_PURCHASE_ORDER: 'PROCESS_PURCHASE_ORDER',
+  ISSUE_REFUND: 'ISSUE_REFUND',
+  
+  // Partner workflows
+  CALCULATE_COMMISSION: 'CALCULATE_COMMISSION',
+  PROCESS_PARTNER_PAYMENT: 'PROCESS_PARTNER_PAYMENT',
+  
+  // Document workflows
+  GENERATE_CERTIFICATE: 'GENERATE_CERTIFICATE',
+  PROCESS_COURSE_MATERIALS: 'PROCESS_COURSE_MATERIALS'
+};
+
+// Step Definitions for each workflow
+const WorkflowSteps = {
+  CREATE_PUBLIC_SESSION: {
+    steps: [
+      {
+        name: 'VALIDATE_SESSION_DETAILS',
+        action: async (activity) => {
+          // Validation logic
+          return { success: true, message: 'Session details validated' };
+        }
+      },
+      {
+        name: 'CREATE_SESSION_RECORD',
+        action: async (activity) => {
+          // Create session in database
+          return { success: true, sessionId: 'session_123' };
+        }
+      },
+      {
+        name: 'SETUP_LEARNWORLDS_COURSE',
+        action: async (activity) => {
+          // Integration with LearnWorlds
+          return { success: true, courseId: 'lw_456' };
+        }
+      },
+      {
+        name: 'NOTIFY_INSTRUCTOR',
+        action: async (activity) => {
+          // Send notification
+          return { success: true };
+        }
+      },
+      {
+        name: 'PUBLISH_TO_CATALOG',
+        action: async (activity) => {
+          // Make session visible
+          return { success: true };
+        }
+      }
+    ],
+    onComplete: async (activity) => {
+      // Final cleanup/notification logic
+    },
+    onError: async (activity, error) => {
+      // Error handling logic
+    }
+  },
+
+  CREATE_PRIVATE_SESSION: {
+    steps: [
+      {
+        name: 'VALIDATE_CLIENT_REQUEST',
+        action: async (activity) => {
+          return { success: true };
+        }
+      },
+      {
+        name: 'CHECK_INSTRUCTOR_AVAILABILITY',
+        action: async (activity) => {
+          return { success: true, availableInstructors: ['inst_1', 'inst_2'] };
+        }
+      },
+      {
+        name: 'GENERATE_PRICING_QUOTE',
+        action: async (activity) => {
+          return { success: true, quoteId: 'quote_123' };
+        }
+      },
+      {
+        name: 'SEND_CLIENT_CONFIRMATION',
+        action: async (activity) => {
+          return { success: true };
+        }
+      },
+      {
+        name: 'CREATE_SESSION_RECORD',
+        action: async (activity) => {
+          return { success: true, sessionId: 'session_456' };
+        }
+      }
+    ],
+    onComplete: async (activity) => {
+      // Notify relevant parties
+    }
+  },
+
+  STUDENT_ENROLLMENT: {
+    steps: [
+      {
+        name: 'VALIDATE_ENROLLMENT_REQUEST',
+        action: async (activity) => {
+          return { success: true };
+        }
+      },
+      {
+        name: 'PROCESS_PAYMENT',
+        action: async (activity) => {
+          return { success: true, transactionId: 'tx_123' };
+        }
+      },
+      {
+        name: 'CREATE_ENROLLMENT_RECORD',
+        action: async (activity) => {
+          return { success: true, enrollmentId: 'enroll_123' };
+        }
+      },
+      {
+        name: 'SETUP_LEARNWORLDS_ACCESS',
+        action: async (activity) => {
+          return { success: true };
+        }
+      },
+      {
+        name: 'SEND_CONFIRMATION_EMAIL',
+        action: async (activity) => {
+          return { success: true };
+        }
+      }
+    ]
+  }
+};
+
+// Updated Activity Schema
+class Activity {
+  constructor({
+    id,
+    workflow,              // Instead of 'action'
+    doerType,
+    doerId,
+    doerName,
+    targetType,
+    targetId,
+    metadata
+  }) {
+    this.id = id || `act_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    this.workflow = workflow;
+    this.doerType = doerType;
+    this.doerId = doerId;
+    this.doerName = doerName;
+    this.targetType = targetType;
+    this.targetId = targetId;
+    this.metadata = metadata;
+    
+    // Workflow state
+    this.currentStepIndex = 0;
+    this.status = 'PENDING';
+    this.steps = WorkflowSteps[workflow].steps;
+    
+    // Tracking
+    this.createdAt = new Date();
+    this.updatedAt = new Date();
+    this.completedAt = null;
+    
+    // History
+    this.stepHistory = [];
+    this.notes = [];
+  }
+
+  async processNextStep() {
+    if (this.currentStepIndex >= this.steps.length) {
+      return { success: false, message: 'Workflow already completed' };
+    }
+
+    const currentStep = this.steps[this.currentStepIndex];
+    
+    try {
+      // Update status
+      this.status = 'IN_PROGRESS';
+      this.updatedAt = new Date();
+      
+      // Execute step action
+      const result = await currentStep.action(this);
+      
+      // Record step completion
+      this.stepHistory.push({
+        step: currentStep.name,
+        timestamp: new Date(),
+        status: 'COMPLETED',
+        result
+      });
+
+      // Move to next step
+      this.currentStepIndex++;
+      
+      // Check if workflow is complete
+      if (this.currentStepIndex === this.steps.length) {
+        this.status = 'COMPLETED';
+        this.completedAt = new Date();
+        await WorkflowSteps[this.workflow].onComplete?.(this);
+      }
+
+      return { success: true, result };
+    } catch (error) {
+      // Handle error
+      this.stepHistory.push({
+        step: currentStep.name,
+        timestamp: new Date(),
+        status: 'FAILED',
+        error: error.message
+      });
+
+      this.status = 'FAILED';
+      await WorkflowSteps[this.workflow].onError?.(this, error);
+      
+      return { success: false, error };
+    }
+  }
+
+  getCurrentStep() {
+    return this.steps[this.currentStepIndex];
+  }
+
+  addNote(note) {
+    this.notes.push({
+      ...note,
+      timestamp: new Date()
+    });
+    this.updatedAt = new Date();
+  }
+}
+
+// Example Usage
+const privateSessionActivity = new Activity({
+  workflow: WorkflowType.CREATE_PRIVATE_SESSION,
+  doerType: 'CLIENT',
+  doerId: 'client_123',
+  doerName: 'Acme Corp',
+  targetType: 'COURSE',
+  targetId: 'course_456',
+  metadata: {
+    requestedDates: ['2025-03-15', '2025-03-16'],
+    expectedAttendees: 15,
+    specialRequirements: 'Custom Java modules'
+  }
+});
